@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "navigation": "Navigation",
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "imprint": "Impressum"
+  },
+  "theme": {
+    "toggle": "Theme ändern",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "home": {
+    "hero": {
+      "title": "Ihr Partner für digitale Transformation",
+      "subtitle": "Wir unterstützen Unternehmen bei der Navigation durch die digitale Landschaft mit IT-Beratung und innovativen Lösungen",
+      "cta": "Loslegen"
+    },
+    "services": {
+      "title": "Unsere Leistungen",
+      "cloud": {
+        "title": "Cloud-Beratung",
+        "description": "Professionelle Beratung für Cloud-Migration und -Optimierung"
+      },
+      "development": {
+        "title": "Softwareentwicklung",
+        "description": "Maßgeschneiderte Softwarelösungen für Ihre Anforderungen"
+      },
+      "strategy": {
+        "title": "IT-Strategie",
+        "description": "Strategische Planung für digitale Transformation"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "submit": "Nachricht senden"
+    }
+  }
+}

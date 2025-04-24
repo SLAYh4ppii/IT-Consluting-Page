@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "navigation": "navigation",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "imprint": "Imprint"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "home": {
+    "hero": {
+      "title": "Your Partner in Digital Transformation",
+      "subtitle": "We help businesses navigate the digital landscape with expert IT consulting and innovative solutions",
+      "cta": "Get Started"
+    },
+    "services": {
+      "title": "Our Services",
+      "cloud": {
+        "title": "Cloud Consulting",
+        "description": "Expert guidance on cloud migration and optimization"
+      },
+      "development": {
+        "title": "Software Development",
+        "description": "Custom software solutions tailored to your needs"
+      },
+      "strategy": {
+        "title": "IT Strategy",
+        "description": "Strategic planning for digital transformation"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+}
