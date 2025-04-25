@@ -1,4 +1,4 @@
-// layout.tsx (Server Component)
+// --- Server Layout ---
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
@@ -15,12 +15,15 @@ export async function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params // no need for destructuring here, as we need to await params
+  params
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = await params;  // Await params to resolve locale
+  const { locale } = await params;
+
+  // DEBUG: Log locale to server console
+  console.log('[locale]/layout.tsx loaded with locale:', locale);
 
   let messages;
   try {
@@ -30,7 +33,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
@@ -40,7 +43,7 @@ export default async function LocaleLayout({
             disableTransitionOnChange
           >
             <div className="min-h-screen flex flex-col">
-              <Navbar /> {/* Client-side component */}
+              <Navbar />
               <main className="flex-grow">{children}</main>
               <Footer />
             </div>

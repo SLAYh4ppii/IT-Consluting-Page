@@ -1,5 +1,4 @@
-"use client"
-
+'use client';
 import { motion } from 'framer-motion';
 
 export default function Imprint() {
@@ -12,7 +11,6 @@ export default function Imprint() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl font-bold mb-8">Impressum</h1>
-          
           <div className="prose dark:prose-invert max-w-none">
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Company Information</h2>

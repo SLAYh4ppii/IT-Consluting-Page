@@ -9,14 +9,7 @@ export const metadata: Metadata = {
   description: 'Your trusted partner in digital transformation and IT consulting.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // DO NOT wrap with <html> or <body> here! Let [locale]/layout.tsx handle it.
+  return <>{children}</>;
 }

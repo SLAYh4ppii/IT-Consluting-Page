@@ -260,3 +260,6 @@ export {
   CarouselPrevious,
   CarouselNext,
 };
+
+// Ensure backward compatibility for default import
+export default Carousel;

@@ -1,9 +1,18 @@
 import { getRequestConfig } from 'next-intl/server';
 
 export default getRequestConfig(async ({ locale }) => {
-  const resolvedLocale = locale || 'en'; // Provide a fallback to 'en' if locale is undefined
+  let messages;
+  switch (locale) {
+    case 'de':
+      messages = (await import('../messages/de.json')).default;
+      break;
+    case 'en':
+    default:
+      messages = (await import('../messages/en.json')).default;
+      break;
+  }
   return {
-    locale: resolvedLocale,
-    messages: (await import(`../messages/${resolvedLocale}.json`)).default,
+    locale: locale || 'en',
+    messages,
   };
 });

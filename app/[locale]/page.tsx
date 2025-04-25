@@ -1,16 +1,26 @@
-"use client"
+"use client";
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ArrowRight, Cloud, Code, LineChart } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import {
-  Carousel,
+import Carousel, {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselPrevious
+} from '@/components/ui/carousel';
+import { Button } from '@/components/ui/button';
+
+console.log('DEBUG: Carousel', Carousel);
+console.log('DEBUG: CarouselContent', CarouselContent);
+console.log('DEBUG: CarouselItem', CarouselItem);
+console.log('DEBUG: CarouselNext', CarouselNext);
+console.log('DEBUG: CarouselPrevious', CarouselPrevious);
+console.log('DEBUG: Button', Button);
+console.log('DEBUG: ArrowRight', ArrowRight);
+console.log('DEBUG: Cloud', Cloud);
+console.log('DEBUG: Code', Code);
+console.log('DEBUG: LineChart', LineChart);
 
 export default function Home() {
   const t = useTranslations('home');
@@ -47,33 +57,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partners Carousel */}
+      {/* Partners Carousel - fallback to test default export only */}
       <section className="py-16 bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-4xl mx-auto"
-          >
-            <CarouselContent>
+          <Carousel className="w-full max-w-4xl mx-auto">
+            <div className="flex">
               {partners.map((partner, index) => (
-                <CarouselItem key={index} className="md:basis-1/3">
-                  <div className="p-2">
-                    <div className="rounded-lg overflow-hidden bg-background">
-                      <img
-                        src={partner.logo}
-                        alt={partner.name}
-                        className="w-full h-32 object-cover"
-                      />
-                    </div>
-                  </div>
-                </CarouselItem>
+                <div key={index} className="md:basis-1/3 p-2">
+                  <img src={partner.logo} alt={partner.name} className="w-full h-24 object-contain bg-white rounded shadow" />
+                </div>
               ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            </div>
           </Carousel>
         </div>
       </section>

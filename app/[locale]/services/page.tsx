@@ -1,47 +1,86 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion';
+import * as CardComponents from '../../../components/ui/card';
+import AnimatedSection from './AnimatedSection';
 import { Cloud, Code, LineChart, Database, Shield, Brain } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useTranslations } from 'next-intl';
+import { ReactNode } from 'react';
+
+const { Card, CardHeader, CardTitle, CardDescription, CardContent } = CardComponents;
+
+interface Service {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  features: string[];
+}
 
 export default function Services() {
-  const services = [
+  const t = useTranslations('services');
+  console.log('German t(cloud.title):', t('cloud.title'));
+  const services: Service[] = [
     {
       icon: Cloud,
-      title: "Cloud Consulting",
-      description: "Expert guidance on cloud migration, optimization, and management across major platforms including AWS, Azure, and Google Cloud.",
-      features: ["Cloud Migration", "Cost Optimization", "Architecture Design"]
+      title: t('cloud.title'),
+      description: t('cloud.description'),
+      features: [
+        t('cloud.features.0'),
+        t('cloud.features.1'),
+        t('cloud.features.2'),
+      ],
     },
     {
       icon: Code,
-      title: "Software Development",
-      description: "Custom software solutions built with modern technologies to meet your specific business needs.",
-      features: ["Web Applications", "Mobile Apps", "API Development"]
+      title: t('development.title'),
+      description: t('development.description'),
+      features: [
+        t('development.features.0'),
+        t('development.features.1'),
+        t('development.features.2'),
+      ],
     },
     {
       icon: LineChart,
-      title: "IT Strategy",
-      description: "Strategic planning and roadmapping to align your technology initiatives with business objectives.",
-      features: ["Digital Transformation", "Technology Assessment", "Roadmap Planning"]
+      title: t('strategy.title'),
+      description: t('strategy.description'),
+      features: [
+        t('strategy.features.0'),
+        t('strategy.features.1'),
+        t('strategy.features.2'),
+      ],
     },
     {
       icon: Database,
-      title: "Data Solutions",
-      description: "Comprehensive data management and analytics solutions to drive insights and decision-making.",
-      features: ["Data Analytics", "Business Intelligence", "Data Warehousing"]
+      title: t('infrastructure.title'),
+      description: t('infrastructure.description'),
+      features: [
+        t('infrastructure.features.0'),
+        t('infrastructure.features.1'),
+        t('infrastructure.features.2'),
+        t('infrastructure.features.3'),
+        t('infrastructure.features.4'),
+      ],
     },
     {
       icon: Shield,
-      title: "Cybersecurity",
-      description: "Protect your business with comprehensive security solutions and best practices.",
-      features: ["Security Audits", "Compliance", "Threat Protection"]
+      title: t('cybersecurity.title'),
+      description: t('cybersecurity.description'),
+      features: [
+        t('cybersecurity.features.0'),
+        t('cybersecurity.features.1'),
+        t('cybersecurity.features.2'),
+      ],
     },
     {
       icon: Brain,
-      title: "AI & Machine Learning",
-      description: "Leverage the power of AI to automate processes and gain competitive advantage.",
-      features: ["AI Integration", "ML Models", "Process Automation"]
-    }
+      title: t('ai.title'),
+      description: t('ai.description'),
+      features: [
+        t('ai.features.0'),
+        t('ai.features.1'),
+        t('ai.features.2'),
+      ],
+    },
   ];
 
   return (
@@ -49,39 +88,24 @@ export default function Services() {
       {/* Hero Section */}
       <section className="bg-primary/5 dark:bg-primary/10 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl font-bold mb-6">Our Services</h1>
+          <AnimatedSection className="text-center">
+            <h1 className="text-4xl font-bold mb-6">{t('hero.title')}</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive IT consulting and solutions to drive your digital success
+              {t('hero.description')}
             </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
+          </AnimatedSection>
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, idx) => {
               const Icon = service.icon;
               return (
-                <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <Card className="h-full">
-                    <CardHeader>
-                      <Icon className="h-12 w-12 mb-4 text-primary" />
-                      <CardTitle>{service.title}</CardTitle>
-                      <CardDescription>{service.description}</CardDescription>
+                <AnimatedSection key={idx} delay={idx * 0.1}>
+                  <Card className="h-full flex flex-col">
+                    <CardHeader className="flex flex-col items-center justify-center pb-2">
+                      <span className="mb-4"><Icon className="h-12 w-12 text-primary" /></span>
+                      <CardTitle className="text-2xl text-center mb-2">{service.title}</CardTitle>
+                      <CardDescription className="text-center mb-4">
+                        {service.description}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
@@ -94,7 +118,7 @@ export default function Services() {
                       </ul>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </AnimatedSection>
               );
             })}
           </div>

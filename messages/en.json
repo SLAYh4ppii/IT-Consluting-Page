@@ -1,10 +1,10 @@
 {
   "navigation": {
-    "navigation": "navigation",
     "home": "Home",
     "about": "About",
     "services": "Services",
     "contact": "Contact",
+    "navigation": "Navigation",
     "imprint": "Imprint"
   },
   "theme": {
@@ -14,34 +14,109 @@
     "system": "System"
   },
   "home": {
+    "welcome": "Welcome to TechConsult",
+    "subtitle": "Your trusted partner in digital transformation.",
     "hero": {
-      "title": "Your Partner in Digital Transformation",
-      "subtitle": "We help businesses navigate the digital landscape with expert IT consulting and innovative solutions",
-      "cta": "Get Started"
+      "title": "Comprehensive IT Services for Your Success",
+      "subtitle": "Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business.",
+      "cta": "Get Started",
+      "description": ""
     },
     "services": {
       "title": "Our Services",
+      "description": "Discover our comprehensive range of IT services designed to empower your business.",
       "cloud": {
-        "title": "Cloud Consulting",
-        "description": "Expert guidance on cloud migration and optimization"
+        "title": "Cloud Solutions",
+        "description": "Migration, optimization, and management for AWS, Azure, and Google Cloud. Unlock agility and cost savings."
       },
       "development": {
-        "title": "Software Development",
-        "description": "Custom software solutions tailored to your needs"
+        "title": "Custom Software Development",
+        "description": "Modern web, mobile, and API solutions tailored to your business needs."
       },
       "strategy": {
-        "title": "IT Strategy",
-        "description": "Strategic planning for digital transformation"
+        "title": "IT Strategy & Advisory",
+        "description": "Align your technology with business goals. From digital transformation to roadmap planning."
       }
     }
   },
+  "services": {
+    "title": "Our Services",
+    "description": "Discover our comprehensive range of IT services designed to empower your business.",
+    "cloud": {
+      "title": "Cloud Solutions",
+      "description": "Migration, optimization, and management for AWS, Azure, and Google Cloud. Unlock agility and cost savings.",
+      "features": {
+        "0": "Cloud Migration",
+        "1": "Cost Optimization",
+        "2": "Architecture Design"
+      }
+    },
+    "development": {
+      "title": "Custom Software Development",
+      "description": "Modern web, mobile, and API solutions tailored to your business needs.",
+      "features": {
+        "0": "Web Applications",
+        "1": "Mobile Apps",
+        "2": "API Development"
+      }
+    },
+    "strategy": {
+      "title": "IT Strategy & Advisory",
+      "description": "Align your technology with business goals. From digital transformation to roadmap planning.",
+      "features": {
+        "0": "Digital Transformation",
+        "1": "Technology Assessment",
+        "2": "Roadmap Planning"
+      }
+    },
+    "infrastructure": {
+      "title": "IT Infrastructure & Networking",
+      "description": "Network setup, office IT rollouts, upgrades, Windows and software installation, complete infrastructure builds, backups, updates, and ongoing support for all your IT systems.",
+      "features": {
+        "0": "Network Setup",
+        "1": "Office IT Rollouts",
+        "2": "Windows & Software Installation",
+        "3": "Backups & Updates",
+        "4": "IT System Support"
+      }
+    },
+    "cybersecurity": {
+      "title": "Cybersecurity",
+      "description": "Protect your business with comprehensive security solutions and best practices.",
+      "features": {
+        "0": "Security Audits",
+        "1": "Compliance",
+        "2": "Threat Protection"
+      }
+    },
+    "ai": {
+      "title": "AI & Machine Learning",
+      "description": "Leverage the power of AI to automate processes and gain competitive advantage.",
+      "features": {
+        "0": "AI Integration",
+        "1": "ML Models",
+        "2": "Process Automation"
+      }
+    },
+    "hero": {
+      "title": "Comprehensive IT Services for Your Success",
+      "description": "Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business."
+    }
+  },
   "contact": {
-    "title": "Contact Us",
+    "title": "Contact",
+    "description": "Get in touch with us for your IT needs.",
     "form": {
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "submit": "Send Message"
+      "submit": "Send"
+    },
+    "success": "Your message has been sent!",
+    "error": "There was an error sending your message.",
+    "hero": {
+      "title": "",
+      "description": ""
     }
   }
 }

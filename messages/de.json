@@ -1,47 +1,122 @@
 {
   "navigation": {
-    "navigation": "Navigation",
     "home": "Startseite",
     "about": "Über uns",
-    "services": "Leistungen",
+    "services": "Dienstleistungen",
     "contact": "Kontakt",
+    "navigation": "Navigation",
     "imprint": "Impressum"
   },
   "theme": {
-    "toggle": "Theme ändern",
+    "toggle": "Design wechseln",
     "light": "Hell",
     "dark": "Dunkel",
     "system": "System"
   },
   "home": {
+    "welcome": "Willkommen bei TechConsult",
+    "subtitle": "Ihr vertrauenswürdiger Partner für digitale Transformation.",
     "hero": {
-      "title": "Ihr Partner für digitale Transformation",
-      "subtitle": "Wir unterstützen Unternehmen bei der Navigation durch die digitale Landschaft mit IT-Beratung und innovativen Lösungen",
-      "cta": "Loslegen"
+      "title": "Umfassende IT-Dienstleistungen für Ihren Erfolg",
+      "subtitle": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens.",
+      "cta": "Jetzt starten",
+      "description": ""
     },
     "services": {
-      "title": "Unsere Leistungen",
+      "title": "Unsere Dienstleistungen",
+      "description": "Entdecken Sie unser umfassendes Angebot an IT-Dienstleistungen zur Stärkung Ihres Unternehmens.",
       "cloud": {
-        "title": "Cloud-Beratung",
-        "description": "Professionelle Beratung für Cloud-Migration und -Optimierung"
+        "title": "Cloud-Lösungen",
+        "description": "Migration, Optimierung und Verwaltung für AWS, Azure und Google Cloud. Erreichen Sie mehr Agilität und Kosteneinsparungen."
       },
       "development": {
-        "title": "Softwareentwicklung",
-        "description": "Maßgeschneiderte Softwarelösungen für Ihre Anforderungen"
+        "title": "Individuelle Softwareentwicklung",
+        "description": "Moderne Web-, Mobile- und API-Lösungen, maßgeschneidert für Ihre Geschäftsanforderungen."
       },
       "strategy": {
-        "title": "IT-Strategie",
-        "description": "Strategische Planung für digitale Transformation"
+        "title": "IT-Strategie & Beratung",
+        "description": "Richten Sie Ihre Technologie an Ihren Geschäftszielen aus – von digitaler Transformation bis zur Strategieplanung."
       }
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "description": "Entdecken Sie unser umfassendes Angebot an IT-Dienstleistungen zur Stärkung Ihres Unternehmens.",
+    "cloud": {
+      "title": "Cloud-Lösungen",
+      "description": "Migration, Optimierung und Verwaltung für AWS, Azure und Google Cloud. Erreichen Sie mehr Agilität und Kosteneinsparungen.",
+      "features": {
+        "0": "Cloud-Migration",
+        "1": "Kostenoptimierung",
+        "2": "Architekturdesign"
+      }
+    },
+    "development": {
+      "title": "Individuelle Softwareentwicklung",
+      "description": "Moderne Web-, Mobile- und API-Lösungen, maßgeschneidert für Ihre Geschäftsanforderungen.",
+      "features": {
+        "0": "Webanwendungen",
+        "1": "Mobile Apps",
+        "2": "API-Entwicklung"
+      }
+    },
+    "strategy": {
+      "title": "IT-Strategie & Beratung",
+      "description": "Richten Sie Ihre Technologie an Ihren Geschäftszielen aus – von digitaler Transformation bis zur Strategieplanung.",
+      "features": {
+        "0": "Digitale Transformation",
+        "1": "Technologieanalyse",
+        "2": "Strategieplanung"
+      }
+    },
+    "infrastructure": {
+      "title": "IT-Infrastruktur & Netzwerke",
+      "description": "Netzwerkaufbau, IT-Rollouts im Büro, Upgrades, Windows- und Softwareinstallation, komplette Infrastrukturprojekte, Backups, Updates und laufender Support für Ihre IT-Systeme.",
+      "features": {
+        "0": "Netzwerkaufbau",
+        "1": "IT-Rollouts im Büro",
+        "2": "Windows- & Softwareinstallation",
+        "3": "Backups & Updates",
+        "4": "IT-Systemsupport"
+      }
+    },
+    "cybersecurity": {
+      "title": "Cybersicherheit",
+      "description": "Schützen Sie Ihr Unternehmen mit umfassenden Sicherheitslösungen und Best Practices.",
+      "features": {
+        "0": "Sicherheitsaudits",
+        "1": "Compliance",
+        "2": "Bedrohungsschutz"
+      }
+    },
+    "ai": {
+      "title": "KI & Maschinelles Lernen",
+      "description": "Nutzen Sie die Kraft von KI zur Automatisierung von Prozessen und zur Erlangung von Wettbewerbsvorteilen.",
+      "features": {
+        "0": "KI-Integration",
+        "1": "ML-Modelle",
+        "2": "Prozessautomatisierung"
+      }
+    },
+    "hero": {
+      "title": "Umfassende IT-Dienstleistungen für Ihren Erfolg",
+      "description": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens."
     }
   },
   "contact": {
     "title": "Kontakt",
+    "description": "Kontaktieren Sie uns für Ihre IT-Anforderungen.",
     "form": {
       "name": "Name",
       "email": "E-Mail",
       "message": "Nachricht",
-      "submit": "Nachricht senden"
+      "submit": "Senden"
+    },
+    "success": "Ihre Nachricht wurde gesendet!",
+    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten.",
+    "hero": {
+      "title": "",
+      "description": ""
     }
   }
 }
