@@ -28,13 +28,18 @@ export default async function LocaleLayout({
 
   let messages;
   try {
-    // Verbesserte Fehlerbehandlung beim Laden der Übersetzungen
-    messages = (await import(`../../messages/${locale}.json`)).default;
-    console.log('Translation keys loaded:', Object.keys(messages));
-    
-    // Überprüfen, ob der services-Namespace vorhanden ist
-    if (!messages.services) {
-      console.error('Services translations missing for locale:', locale);
+    // Only attempt to load valid locale files (en.json or de.json)
+    if (locale === 'en' || locale === 'de') {
+      messages = (await import(`../../messages/${locale}.json`)).default;
+      console.log('Translation keys loaded:', Object.keys(messages));
+      
+      // Verify if the services namespace exists
+      if (!messages.services) {
+        console.error('Services translations missing for locale:', locale);
+      }
+    } else {
+      console.error('Unsupported locale:', locale);
+      notFound();
     }
   } catch (error) {
     console.error('Error loading translations:', error);

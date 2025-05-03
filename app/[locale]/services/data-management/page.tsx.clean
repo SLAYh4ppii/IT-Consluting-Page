@@ -1,0 +1,166 @@
+import { getTranslations } from 'next-intl/server';
+import { Database, Shield, GitMerge, BarChart } from 'lucide-react';
+
+// Import the client component
+import ClientDataManagementPage from './client-page';
+
+export default async function DataManagementPage({ params }: { params: { locale: string } }) {
+  const t = await getTranslations('solutions.datamanagement');
+  const locale = params.locale;
+  
+  // Data management services
+  const dataServices = [
+    {
+      icon: <Shield className="h-10 w-10 text-primary" />,
+      title: t('services.0.title'),
+      description: t('services.0.description'),
+      features: [
+        t('services.0.features.0'),
+        t('services.0.features.1'),
+        t('services.0.features.2')
+      ]
+    },
+    {
+      icon: <GitMerge className="h-10 w-10 text-primary" />,
+      title: t('services.1.title'),
+      description: t('services.1.description'),
+      features: [
+        t('services.1.features.0'),
+        t('services.1.features.1'),
+        t('services.1.features.2')
+      ]
+    },
+    {
+      icon: <Database className="h-10 w-10 text-primary" />,
+      title: t('services.2.title'),
+      description: t('services.2.description'),
+      features: [
+        t('services.2.features.0'),
+        t('services.2.features.1'),
+        t('services.2.features.2')
+      ]
+    },
+    {
+      icon: <BarChart className="h-10 w-10 text-primary" />,
+      title: t('services.3.title'),
+      description: t('services.3.description'),
+      features: [
+        t('services.3.features.0'),
+        t('services.3.features.1'),
+        t('services.3.features.2')
+      ]
+    }
+  ];
+
+  // Data approach steps
+  const approachSteps = [
+    {
+      number: "01",
+      title: t('approach.items.0.title'),
+      description: t('approach.items.0.description')
+    },
+    {
+      number: "02",
+      title: t('approach.items.1.title'),
+      description: t('approach.items.1.description')
+    },
+    {
+      number: "03",
+      title: t('approach.items.2.title'),
+      description: t('approach.items.2.description')
+    },
+    {
+      number: "04",
+      title: t('approach.items.3.title'),
+      description: t('approach.items.3.description')
+    },
+    {
+      number: "05",
+      title: t('approach.items.4.title'),
+      description: t('approach.items.4.description')
+    },
+    {
+      number: "06",
+      title: t('approach.items.5.title'),
+      description: t('approach.items.5.description')
+    }
+  ];
+
+  // Technology stacks
+  const databasesTech = t.raw('technologies.databases') || ["Oracle", "SQL Server", "PostgreSQL", "MongoDB", "Snowflake"];
+  const integrationTech = t.raw('technologies.integration') || ["Informatica", "Talend", "Apache NiFi", "MuleSoft", "Azure Data Factory"];
+  const analyticsTech = t.raw('technologies.analytics') || ["Tableau", "Power BI", "Looker", "Qlik", "SAS"];
+  const bigdataTech = t.raw('technologies.bigdata') || ["Hadoop", "Spark", "Kafka", "Databricks", "AWS EMR"];
+  const aiTech = t.raw('technologies.ai') || ["TensorFlow", "PyTorch", "Azure ML", "AWS SageMaker", "H2O.ai"];
+
+  // Stats
+  const stats = [
+    {
+      number: t('stats.0.number'),
+      label: t('stats.0.label')
+    },
+    {
+      number: t('stats.1.number'),
+      label: t('stats.1.label')
+    },
+    {
+      number: t('stats.2.number'),
+      label: t('stats.2.label')
+    },
+    {
+      number: t('stats.3.number'),
+      label: t('stats.3.label')
+    }
+  ];
+
+  // Prepare the translated data to pass to the client component
+  const dataManagementData = {
+    title: t('title'),
+    description: t('description'),
+    text5: t('text5'),
+    text6: t('text6'),
+    hero: {
+      title: t('hero.title'),
+      description: t('hero.description'),
+      primaryCta: t('hero.primaryCta'),
+      secondaryCta: t('hero.secondaryCta')
+    },
+    services: {
+      subtitle: t('services.subtitle'),
+      title: t('services.title'),
+      description: t('services.description'),
+      items: dataServices,
+    },
+    approach: {
+      subtitle: t('approach.subtitle'),
+      title: t('approach.title'),
+      description: t('approach.description'),
+      items: approachSteps
+    },
+    technologies: {
+      subtitle: t('technologies.subtitle'),
+      title: t('technologies.title'),
+      description: t('technologies.description'),
+      databases: databasesTech,
+      integration: integrationTech,
+      analytics: analyticsTech,
+      bigdata: bigdataTech,
+      ai: aiTech
+    },
+    stats: stats,
+    cta: {
+      title: t('cta.title'),
+      description: t('cta.description'),
+      primaryButton: t('cta.primaryButton'),
+      secondaryButton: t('cta.secondaryButton')
+    }
+  };
+
+  // Return the client component with the translated data
+  return (
+    <ClientDataManagementPage 
+      locale={locale} 
+      data={dataManagementData} 
+    />
+  );
+}

@@ -155,6 +155,14 @@ export default function Solutions() {
             <p className="text-lg text-muted-foreground">
               {t('sectionDescription', { fallback: 'Discover our comprehensive range of enterprise solutions designed to address your most complex business challenges.' })}
             </p>
+            <div className="mt-4 max-w-3xl mx-auto">
+              <p className="text-base text-muted-foreground mb-2">
+                {t('text5')}
+              </p>
+              <p className="text-base text-muted-foreground">
+                {t('text6')}
+              </p>
+            </div>
           </div>
 
           <Tabs defaultValue="cloud" className="w-full max-w-5xl mx-auto">

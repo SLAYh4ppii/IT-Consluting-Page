@@ -62,17 +62,17 @@ export default function Navbar() {
   ];
   
   const serviceItems = [
-    { icon: Cloud, name: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services', href: `/${locale}/services#cloud` },
-    { icon: Code, name: 'Software Development', description: 'Custom software solutions for your business needs', href: `/${locale}/services#development` },
-    { icon: Database, name: 'Data Management', description: 'Enterprise data solutions and analytics', href: `/${locale}/services#data` },
-    { icon: Shield, name: 'Cybersecurity', description: 'Protect your business with advanced security', href: `/${locale}/services#security` },
+    { icon: Cloud, name: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services', href: `/${locale}/services/cloud` },
+    { icon: Code, name: 'Software Development', description: 'Custom software solutions for your business needs', href: `/${locale}/services/software-development` },
+    { icon: Database, name: 'Data Management', description: 'Enterprise data solutions and analytics', href: `/${locale}/services/data-management` },
+    { icon: Shield, name: 'Cybersecurity', description: 'Protect your business with advanced security', href: `/${locale}/services/security` },
   ];
   
   const solutionItems = [
-    { icon: LineChart, name: 'Digital Transformation', description: 'Comprehensive digital strategy and execution', href: `/${locale}/solutions#transformation` },
-    { icon: Monitor, name: 'IT Infrastructure', description: 'Reliable and scalable IT infrastructure solutions', href: `/${locale}/solutions#infrastructure` },
-    { icon: User, name: 'Managed Services', description: '24/7 support and maintenance for your systems', href: `/${locale}/solutions#managed` },
-    { icon: Clock, name: 'Business Continuity', description: 'Disaster recovery and business continuity planning', href: `/${locale}/solutions#continuity` },
+    { icon: LineChart, name: 'Digital Transformation', description: 'Comprehensive digital strategy and execution', href: `/${locale}/solutions/transformation` },
+    { icon: Monitor, name: 'IT Infrastructure', description: 'Reliable and scalable IT infrastructure solutions', href: `/${locale}/solutions/infrastructure` },
+    { icon: User, name: 'Managed Services', description: '24/7 support and maintenance for your systems', href: `/${locale}/solutions/managed` },
+    { icon: Clock, name: 'Business Continuity', description: 'Disaster recovery and business continuity planning', href: `/${locale}/solutions/continuity` },
   ];
   
   const isActive = (href: string) => {

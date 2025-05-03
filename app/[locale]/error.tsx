@@ -23,8 +23,14 @@ export default function LocaleError({
       <h2 className="text-2xl md:text-3xl font-bold mb-4">
         {t('title', { fallback: 'Something went wrong' })}
       </h2>
-      <p className="text-muted-foreground mb-8 max-w-md">
+      <p className="text-muted-foreground mb-4 max-w-md">
         {t('description', { fallback: 'We apologize for the inconvenience. An unexpected error has occurred.' })}
+      </p>
+      <p className="text-muted-foreground mb-2 max-w-md text-sm">
+        {t('text5')}
+      </p>
+      <p className="text-muted-foreground mb-8 max-w-md text-sm">
+        {t('text6')}
       </p>
       <Button
         onClick={reset}

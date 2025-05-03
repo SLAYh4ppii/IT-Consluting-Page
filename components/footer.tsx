@@ -6,56 +6,67 @@ import { usePathname } from 'next/navigation';
 import { Monitor, Mail, MapPin, Phone, ChevronRight, ExternalLink, Facebook, Twitter, Linkedin, Instagram, ArrowRight, Award, CheckCircle, Clock, Shield, Users, Globe, FileCheck, BadgeCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import { useState } from 'react';
 
 export default function Footer() {
-  const t = useTranslations('navigation');
+  const navT = useTranslations('navigation');
+  const footerT = useTranslations('footer');
   const pathname = usePathname();
   const locale = pathname.split('/')[1];
+  const [email, setEmail] = useState('');
 
   const mainLinks = [
-    { name: t('home'), href: `/${locale}` },
-    { name: t('about'), href: `/${locale}/about` },
-    { name: t('services'), href: `/${locale}/services` },
-    { name: t('solutions'), href: `/${locale}/solutions` },
-    { name: t('contact'), href: `/${locale}/contact` },
+    { name: navT('home'), href: `/${locale}` },
+    { name: navT('about'), href: `/${locale}/about` },
+    { name: navT('services'), href: `/${locale}/services` },
+    { name: navT('solutions'), href: `/${locale}/solutions` },
+    { name: navT('contact'), href: `/${locale}/contact` },
   ];
 
   const serviceLinks = [
-    { name: 'Cloud Solutions', href: `/${locale}/services#cloud` },
-    { name: 'Software Development', href: `/${locale}/services#development` },
-    { name: 'IT Strategy', href: `/${locale}/services#strategy` },
-    { name: 'Cybersecurity', href: `/${locale}/services#security` },
-    { name: 'Data Management', href: `/${locale}/services#data` },
-    { name: 'AI & Machine Learning', href: `/${locale}/services#ai` },
+    { name: footerT('serviceLinks.cloud'), href: `/${locale}/services#cloud` },
+    { name: footerT('serviceLinks.software'), href: `/${locale}/services#development` },
+    { name: footerT('serviceLinks.strategy'), href: `/${locale}/services#strategy` },
+    { name: footerT('serviceLinks.security'), href: `/${locale}/services#security` },
+    { name: footerT('serviceLinks.data'), href: `/${locale}/services#data` },
+    { name: footerT('serviceLinks.ai'), href: `/${locale}/services#ai` },
   ];
   
   const solutionLinks = [
-    { name: 'Digital Transformation', href: `/${locale}/solutions#transformation` },
-    { name: 'IT Infrastructure', href: `/${locale}/solutions#infrastructure` },
-    { name: 'Managed Services', href: `/${locale}/solutions#managed` },
-    { name: 'Business Continuity', href: `/${locale}/solutions#continuity` },
+    { name: footerT('solutionLinks.transformation'), href: `/${locale}/solutions/transformation` },
+    { name: footerT('solutionLinks.infrastructure'), href: `/${locale}/solutions/infrastructure` },
+    { name: footerT('solutionLinks.managed'), href: `/${locale}/solutions/managed` },
+    { name: footerT('solutionLinks.continuity'), href: `/${locale}/solutions/continuity` },
   ];
 
   const resourceLinks = [
-    { name: 'Case Studies', href: `/${locale}/resources/case-studies` },
-    { name: 'Blog', href: `/${locale}/resources/blog` },
-    { name: 'White Papers', href: `/${locale}/resources/white-papers` },
-    { name: 'Webinars', href: `/${locale}/resources/webinars` },
+    { name: footerT('resourceLinks.caseStudies'), href: `/${locale}/resources/case-studies` },
+    { name: footerT('resourceLinks.blog'), href: `/${locale}/resources/blog` },
+    { name: footerT('resourceLinks.whitepapers'), href: `/${locale}/resources/white-papers` },
+    { name: footerT('resourceLinks.webinars'), href: `/${locale}/resources/webinars` },
   ];
 
   const legalLinks = [
-    { name: t('privacy'), href: `/${locale}/privacy` },
-    { name: t('terms'), href: `/${locale}/terms` },
-    { name: t('imprint'), href: `/${locale}/imprint` },
+    { name: navT('privacy'), href: `/${locale}/privacy` },
+    { name: navT('terms'), href: `/${locale}/terms` },
+    { name: navT('imprint'), href: `/${locale}/imprint` },
     { name: 'Cookies', href: `/${locale}/cookies` },
   ];
   
   const achievements = [
-    { number: '500+', label: 'Clients Worldwide' },
-    { number: '15+', label: 'Years Experience' },
-    { number: '98%', label: 'Client Satisfaction' },
-    { number: '24/7', label: 'Support Available' },
+    { number: footerT('stats.clients'), label: footerT('stats.clientsLabel') },
+    { number: footerT('stats.experience'), label: footerT('stats.experienceLabel') },
+    { number: footerT('stats.satisfaction'), label: footerT('stats.satisfactionLabel') },
+    { number: footerT('stats.support'), label: footerT('stats.supportLabel') },
   ];
+  
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would normally handle the newsletter subscription
+    console.log('Subscribing email:', email);
+    setEmail('');
+    // Show success message or handle errors
+  };
 
   return (
     <footer className="bg-background">
@@ -78,13 +89,15 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-16 md:py-20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto">
             <div className="text-center md:text-left">
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">Ready to transform your business?</h3>
-              <p className="text-muted-foreground max-w-xl">Get in touch with our experts to discuss your IT needs and discover how we can help you achieve your goals.</p>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3">{footerT('cta.title')}</h3>
+              <p className="text-muted-foreground max-w-xl">{footerT('cta.description')}</p>
             </div>
             <div className="flex-shrink-0">
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-medium shadow-sm">
-                Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href={`/${locale}/contact`}>
+                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-medium shadow-sm">
+                  {footerT('cta.button')} <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -94,18 +107,21 @@ export default function Footer() {
       <div className="border-t border-border">
         <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-xl md:text-2xl font-bold mb-3">Stay Updated with Industry Insights</h3>
-            <p className="text-muted-foreground mb-6">Subscribe to our newsletter to receive the latest news, insights, and exclusive content.</p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <h3 className="text-xl md:text-2xl font-bold mb-3">{footerT('newsletter.title')}</h3>
+            <p className="text-muted-foreground mb-6">{footerT('newsletter.description')}</p>
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input 
                 type="email" 
-                placeholder="Your email address" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={footerT('newsletter.placeholder')} 
                 className="flex-1 px-4 py-2 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30"
+                required
               />
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap">
-                Subscribe
+              <Button type="submit" className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap">
+                {footerT('newsletter.button')}
               </Button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -126,12 +142,12 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Your trusted partner in digital transformation. We provide innovative IT solutions to help businesses thrive in the digital age with industry-leading expertise and personalized service.
+                {footerT('companyInfo')}
               </p>
               
               <div className="flex items-center space-x-2 mb-6">
                 <BadgeCheck className="h-5 w-5 text-primary" />
-                <span className="text-sm font-medium">ISO 27001 Certified</span>
+                <span className="text-sm font-medium">{footerT('certification')}</span>
               </div>
               
               <div className="flex space-x-3 mb-8">
@@ -169,7 +185,7 @@ export default function Footer() {
 
             {/* Company links */}
             <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-4 text-foreground">Company</h3>
+              <h3 className="text-base font-semibold mb-4 text-foreground">{footerT('sections.company')}</h3>
               <ul className="space-y-3">
                 {mainLinks.map((link) => (
                   <li key={link.href}>
@@ -187,7 +203,7 @@ export default function Footer() {
 
             {/* Services */}
             <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-4 text-foreground">Services</h3>
+              <h3 className="text-base font-semibold mb-4 text-foreground">{footerT('sections.services')}</h3>
               <ul className="space-y-3">
                 {serviceLinks.map((link) => (
                   <li key={link.href}>
@@ -205,7 +221,7 @@ export default function Footer() {
             
             {/* Solutions */}
             <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-4 text-foreground">Solutions</h3>
+              <h3 className="text-base font-semibold mb-4 text-foreground">{footerT('sections.solutions')}</h3>
               <ul className="space-y-3">
                 {solutionLinks.map((link) => (
                   <li key={link.href}>
@@ -223,7 +239,7 @@ export default function Footer() {
 
             {/* Resources */}
             <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-4 text-foreground">Resources</h3>
+              <h3 className="text-base font-semibold mb-4 text-foreground">{footerT('sections.resources')}</h3>
               <ul className="space-y-3">
                 {resourceLinks.map((link) => (
                   <li key={link.href}>
@@ -241,26 +257,25 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-4 text-foreground">Contact Us</h3>
+              <h3 className="text-base font-semibold mb-4 text-foreground">{footerT('sections.contact')}</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <MapPin className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">
-                    Techstrasse 1<br />
-                    1010 Vienna, Austria
+                    {footerT('contactInfo.address')}
                   </span>
                 </li>
                 <li className="flex items-center">
                   <Phone className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                  <a href="tel:+4312345678" className="text-sm text-muted-foreground hover:text-primary">+43 1 234 5678</a>
+                  <a href="tel:+4312345678" className="text-sm text-muted-foreground hover:text-primary">{footerT('contactInfo.phone')}</a>
                 </li>
                 <li className="flex items-center">
                   <Mail className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                  <a href="mailto:info@techconsult.com" className="text-sm text-muted-foreground hover:text-primary">info@techconsult.com</a>
+                  <a href="mailto:info@techconsult.com" className="text-sm text-muted-foreground hover:text-primary">{footerT('contactInfo.email')}</a>
                 </li>
                 <li className="flex items-center">
                   <Clock className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                  <span className="text-sm text-muted-foreground">Mon-Fri: 9:00-18:00</span>
+                  <span className="text-sm text-muted-foreground">{footerT('contactInfo.hours')}</span>
                 </li>
               </ul>
             </div>
@@ -274,19 +289,19 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             <div className="flex items-center">
               <Shield className="h-5 w-5 mr-2 text-primary" />
-              <span className="text-sm font-medium">ISO 27001</span>
+              <span className="text-sm font-medium">{footerT('certifications.iso')}</span>
             </div>
             <div className="flex items-center">
               <CheckCircle className="h-5 w-5 mr-2 text-primary" />
-              <span className="text-sm font-medium">GDPR Compliant</span>
+              <span className="text-sm font-medium">{footerT('certifications.gdpr')}</span>
             </div>
             <div className="flex items-center">
               <Award className="h-5 w-5 mr-2 text-primary" />
-              <span className="text-sm font-medium">Top IT Provider 2024</span>
+              <span className="text-sm font-medium">{footerT('certifications.award')}</span>
             </div>
             <div className="flex items-center">
               <FileCheck className="h-5 w-5 mr-2 text-primary" />
-              <span className="text-sm font-medium">Certified Microsoft Partner</span>
+              <span className="text-sm font-medium">{footerT('certifications.microsoft')}</span>
             </div>
           </div>
         </div>
@@ -298,7 +313,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center">
               <p className="text-xs text-muted-foreground mb-2 md:mb-0 md:mr-6">
-                © {new Date().getFullYear()} TechConsult GmbH. All rights reserved.
+                {footerT('copyright', { year: new Date().getFullYear() })}
               </p>
               <div className="flex space-x-4 mb-4 md:mb-0">
                 {legalLinks.map((link) => (
@@ -314,13 +329,13 @@ export default function Footer() {
             </div>
             <div className="flex items-center space-x-6">
               <a href="#" className="text-xs text-muted-foreground hover:text-primary flex items-center transition-colors">
-                <ExternalLink className="h-3 w-3 mr-1.5" /> Partner Portal
+                <ExternalLink className="h-3 w-3 mr-1.5" /> {footerT('quickLinks.partner')}
               </a>
               <a href="#" className="text-xs text-muted-foreground hover:text-primary flex items-center transition-colors">
-                <Users className="h-3 w-3 mr-1.5" /> Client Login
+                <Users className="h-3 w-3 mr-1.5" /> {footerT('quickLinks.client')}
               </a>
               <a href="#" className="text-xs text-muted-foreground hover:text-primary flex items-center transition-colors">
-                <Globe className="h-3 w-3 mr-1.5" /> Sitemap
+                <Globe className="h-3 w-3 mr-1.5" /> {footerT('quickLinks.sitemap')}
               </a>
             </div>
           </div>

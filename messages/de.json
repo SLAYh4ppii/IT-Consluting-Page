@@ -5,7 +5,6 @@
     "services": "Dienstleistungen",
     "solutions": "Lösungen",
     "contact": "Kontakt",
-    "navigation": "Navigation",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen"
@@ -44,22 +43,87 @@
   },
   "services": {
     "title": "Unsere Dienstleistungen",
-    "description": "Entdecken Sie unser umfassendes Angebot an IT-Dienstleistungen zur Stärkung Ihres Unternehmens.",
+    "description": "Entdecken Sie unser umfassendes Angebot an IT-Dienstleistungen, die Ihr Unternehmen stärken.",
     "sectionTitle": "Unsere Dienstleistungen",
     "sectionSubtitle": "Unternehmenslösungen",
     "sectionDescription": "Wir bieten umfassende IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind, mit branchenführender Expertise und persönlichem Service.",
-    "services": {
-      "sectionTitle": "Unsere Dienstleistungen",
-      "sectionSubtitle": "Unternehmenslösungen",
-      "sectionDescription": "Wir bieten umfassende IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind, mit branchenführender Expertise und persönlichem Service."
+    "text5": "[DE] Empowering businesses with cutting-edge IT services that drive growth and innovation. Our team of experts is dedicated to delivering tailored solutions that address your unique challenges.",
+    "text6": "[DE] Partner with us to transform your IT infrastructure and unlock new possibilities for your business. We're committed to your success with reliable, scalable, and secure technology solutions.",
+    "hero": {
+      "title": "[DE] Comprehensive IT Services for Your Success",
+      "subtitle": "[DE] Professional IT Services",
+      "description": "[DE] Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business.",
+      "cta": "[DE] Explore Services",
+      "secondaryCta": "[DE] Request Consultation"
     },
-    "cloud": {
-      "title": "Cloud-Lösungen",
-      "description": "Migration, Optimierung und Verwaltung für AWS, Azure und Google Cloud. Erreichen Sie mehr Agilität und Kosteneinsparungen.",
-      "features": {
-        "0": "Cloud-Migration",
-        "1": "Kostenoptimierung",
-        "2": "Architekturdesign"
+    "cybersecurity": {
+      "title": "Cybersicherheit",
+      "description": "[DE] Protect your business with comprehensive security solutions and best practices.",
+      "features": [
+        "[DE] Security Audits Placeholder",
+        "[DE] Threat Protection Placeholder",
+        "[DE] Compliance Solutions Placeholder"
+      ],
+      "hero": {
+        "title": "Schützen Sie Ihr Unternehmen vor Cyberbedrohungen",
+        "description": "Umfassende Cybersicherheitslösungen zum Schutz Ihrer Daten, Systeme und Reputation in einer zunehmend komplexen Bedrohungslandschaft.",
+        "primaryCta": "Sicherheitsbewertung erhalten",
+        "secondaryCta": "Mehr erfahren"
+      },
+      "stats": [
+        {
+          "label": "der Cyberangriffe zielen auf kleine Unternehmen ab"
+        },
+        {
+          "label": "durchschnittliche Kosten einer Datenschutzverletzung in Europa"
+        },
+        {
+          "label": "Tage durchschnittliche Zeit, um eine Verletzung zu erkennen"
+        },
+        {
+          "label": "der Malware wird per E-Mail zugestellt"
+        }
+      ],
+      "services": {
+        "subtitle": "Unsere Sicherheitsdienste",
+        "title": "Umfassende Cybersicherheitslösungen",
+        "description": "Wir bieten End-to-End-Sicherheitslösungen, die Ihr Unternehmen vor sich entwickelnden Cyber-Bedrohungen schützen und die Einhaltung gesetzlicher Vorschriften gewährleisten.",
+        "0": {
+          "title": "Sicherheitsbewertung",
+          "description": "Umfassende Bewertung Ihrer Sicherheitslage zur Identifizierung von Schwachstellen und Risiken.",
+          "features": [
+            "Schwachstellenscans und Penetrationstests",
+            "Sicherheitsarchitekturprüfung",
+            "Risikobewertung und Compliance-Evaluierung"
+          ]
+        },
+        "1": {
+          "title": "Netzwerksicherheit",
+          "description": "Schützen Sie Ihre Netzwerkinfrastruktur vor unbefugtem Zugriff und Cyberbedrohungen.",
+          "features": [
+            "Firewall-Implementierung und -Management",
+            "Erkennung und Verhinderung von Eindringlingen",
+            "VPN und sicherer Fernzugriff"
+          ]
+        },
+        "2": {
+          "title": "Datenschutz",
+          "description": "Schützen Sie Ihre sensiblen Daten mit robuster Verschlüsselung und Zugriffskontrollen.",
+          "features": [
+            "Datenverschlüsselungslösungen",
+            "Verhinderung von Datenverlust (DLP)",
+            "Sichere Datenspeicherung und -sicherung"
+          ]
+        },
+        "3": {
+          "title": "Compliance & Governance",
+          "description": "Stellen Sie sicher, dass Ihre Sicherheitspraktiken den Branchenvorschriften und -standards entsprechen.",
+          "features": [
+            "Regulatorische Compliance (DSGVO, HIPAA usw.)",
+            "Entwicklung von Sicherheitsrichtlinien",
+            "Compliance-Auditing und -Berichterstattung"
+          ]
+        }
       }
     },
     "development": {
@@ -67,37 +131,82 @@
       "description": "Moderne Web-, Mobile- und API-Lösungen, maßgeschneidert für Ihre Geschäftsanforderungen.",
       "features": {
         "0": "Webanwendungen",
-        "1": "Mobile Apps",
+        "1": "Mobile Anwendungen",
         "2": "API-Entwicklung"
+      },
+      "hero": {
+        "title": "Individuelle Softwareentwicklungslösungen",
+        "description": "Transformieren Sie Ihr Unternehmen mit maßgeschneiderten Softwarelösungen, die entwickelt wurden, um Ihre einzigartigen Herausforderungen zu bewältigen und Innovation voranzutreiben.",
+        "primaryCta": "Starten Sie Ihr Projekt",
+        "secondaryCta": "Entdecken Sie unsere Arbeit"
       }
+    },
+    "datamanagement": {
+      "title": "[DE] Data Management Placeholder",
+      "description": "[DE] Data Management Description Placeholder.",
+      "features": [
+        "[DE] Data Governance Placeholder",
+        "[DE] Data Integration Placeholder",
+        "[DE] Data Analytics Placeholder"
+      ]
+    },
+    "infrastructure": {
+      "title": "[DE] IT Infrastructure Placeholder"
     },
     "strategy": {
       "title": "IT-Strategie & Beratung",
       "description": "Richten Sie Ihre Technologie an Ihren Geschäftszielen aus – von digitaler Transformation bis zur Strategieplanung.",
       "features": {
         "0": "Digitale Transformation",
-        "1": "Technologieanalyse",
-        "2": "Strategieplanung"
+        "1": "IT-Roadmap-Planung",
+        "2": "Technologiebewertung"
       }
     },
-    "infrastructure": {
-      "title": "IT-Infrastruktur & Netzwerke",
-      "description": "Netzwerkaufbau, IT-Rollouts im Büro, Upgrades, Windows- und Softwareinstallation, komplette Infrastrukturprojekte, Backups, Updates und laufender Support für Ihre IT-Systeme.",
-      "features": {
-        "0": "Netzwerkaufbau",
-        "1": "IT-Rollouts im Büro",
-        "2": "Windows- & Softwareinstallation",
-        "3": "Backups & Updates",
-        "4": "IT-Systemsupport"
-      }
-    },
-    "cybersecurity": {
+    "security": {
       "title": "Cybersicherheit",
-      "description": "Schützen Sie Ihr Unternehmen mit umfassenden Sicherheitslösungen und Best Practices.",
+      "description": "[DE] Protect your business with comprehensive security solutions and best practices.",
       "features": {
-        "0": "Sicherheitsaudits",
-        "1": "Compliance",
-        "2": "Bedrohungsschutz"
+        "0": "Sicherheitsbewertung",
+        "1": "Bedrohungserkennung & -reaktion",
+        "2": "Compliance-Management",
+        "3": "Sicherheitsschulung"
+      },
+      "approach": {
+        "subtitle": "Unser Ansatz",
+        "title": "Proaktives Sicherheitsframework",
+        "description": "Unser umfassendes Sicherheitsframework ist darauf ausgelegt, Ihr Unternehmen auf allen Ebenen zu schützen, von der Infrastruktur bis hin zur Schulung der Endbenutzer.",
+        "items": {
+          "0": {
+            "title": "Identifizieren",
+            "description": "Umfassende Bewertung zur Identifizierung von Schwachstellen, Vermögenswerten und potenziellen Bedrohungen für Ihre Organisation."
+          },
+          "1": {
+            "title": "Schützen",
+            "description": "Implementierung von Sicherheitskontrollen und Schutzmaßnahmen zum Schutz kritischer Systeme und Daten."
+          },
+          "2": {
+            "title": "Erkennen",
+            "description": "Kontinuierliche Überwachung und Bedrohungserkennung zur Identifizierung von Sicherheitsereignissen und -vorfällen."
+          },
+          "3": {
+            "title": "Reagieren",
+            "description": "Schnelle Reaktion auf Vorfälle, um Sicherheitsverletzungen einzudämmen, zu analysieren und zu beheben."
+          },
+          "4": {
+            "title": "Wiederherstellen",
+            "description": "Geschäftskontinuität und Planung der Notfallwiederherstellung zur Wiederherstellung des normalen Betriebs."
+          },
+          "5": {
+            "title": "Verbessern",
+            "description": "Kontinuierliche Verbesserung der Sicherheitslage durch gewonnene Erkenntnisse und Schulungen zum Sicherheitsbewusstsein."
+          }
+        }
+      },
+      "hero": {
+        "title": "Schützen Sie Ihr Unternehmen vor Cyberbedrohungen",
+        "description": "Umfassende Cybersicherheitslösungen zum Schutz Ihrer Daten, Systeme und Reputation in einer zunehmend komplexen Bedrohungslandschaft.",
+        "primaryCta": "Sicherheitsbewertung erhalten",
+        "secondaryCta": "Mehr erfahren"
       }
     },
     "ai": {
@@ -105,90 +214,137 @@
       "description": "Nutzen Sie die Kraft von KI zur Automatisierung von Prozessen und zur Erlangung von Wettbewerbsvorteilen.",
       "features": {
         "0": "KI-Integration",
-        "1": "ML-Modelle",
-        "2": "Prozessautomatisierung"
+        "1": "Maschinelle Lernmodelle",
+        "2": "Prädiktive Analytik"
+      }
+    },
+    "cloud": {
+      "title": "Cloud-Lösungen",
+      "description": "Skalierbare Cloud-Infrastruktur und Migrationsdienste für moderne Unternehmen.",
+      "features": {
+        "0": "Cloud-Infrastruktur",
+        "1": "Cloud-Migration",
+        "2": "Cloud-Speicher"
+      },
+      "hero": {
+        "title": "Enterprise Cloud-Lösungen",
+        "description": "Skalierbare, sichere und kosteneffektive Cloud-Infrastruktur und Migrationsdienste, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+        "primaryCta": "Jetzt starten",
+        "secondaryCta": "Dienste erkunden"
       }
     },
     "hero": {
       "title": "Umfassende IT-Dienstleistungen für Ihren Erfolg",
       "subtitle": "Professionelle IT-Dienstleistungen",
-      "description": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens.",
-      "cta": "Unsere Dienstleistungen entdecken",
-      "secondaryCta": "Mehr erfahren"
+      "description": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens."
     },
     "whyChooseUs": {
-      "title": "Warum TechConsult wählen",
-      "subtitle": "Unser Unterschied",
-      "description": "Wir kombinieren Branchenexpertise mit innovativen Lösungen, um außergewöhnliche Ergebnisse für unsere Kunden zu erzielen.",
+      "subtitle": "[DE] Our Difference Placeholder",
+      "title": "[DE] Why Choose TechConsult Placeholder",
+      "description": "[DE] Why Choose Us Description Placeholder.",
       "reasons": {
         "expertise": {
-          "title": "Branchenexpertise",
-          "description": "Unser Team bringt jahrzehntelange Erfahrung in verschiedenen Branchen und Technologien mit."
+          "title": "[DE] Industry Expertise Placeholder",
+          "description": "[DE] Expertise Description Placeholder."
         },
         "customized": {
-          "title": "Maßgeschneiderte Lösungen",
-          "description": "Wir entwickeln maßgeschneiderte Strategien, die Ihre einzigartigen Geschäftsherausforderungen lösen."
+          "title": "[DE] Customized Solutions Placeholder",
+          "description": "[DE] Customized Description Placeholder."
         },
         "support": {
-          "title": "24/7 Support",
-          "description": "Unser engagiertes Support-Team steht Ihnen jederzeit zur Verfügung, um Ihnen bei Problemen zu helfen."
+          "title": "[DE] 24/7 Support Placeholder",
+          "description": "[DE] Support Description Placeholder."
         },
         "innovation": {
-          "title": "Kontinuierliche Innovation",
-          "description": "Wir bleiben an der Spitze der Technologie, um hochmoderne Lösungen anzubieten."
+          "title": "[DE] Continuous Innovation Placeholder",
+          "description": "[DE] Innovation Description Placeholder."
         }
       }
     },
     "cta": {
-      "title": "Bereit, Ihre IT-Infrastruktur zu transformieren?",
-      "description": "Kontaktieren Sie unser Team noch heute, um zu besprechen, wie wir Ihnen helfen können, Ihre Geschäftsziele durch innovative IT-Lösungen zu erreichen.",
-      "button": "Jetzt Kontakt aufnehmen",
-      "secondaryButton": "Demo vereinbaren"
-    }
-  },
-  "contact": {
-    "title": "Kontakt",
-    "description": "Kontaktieren Sie uns für Ihre IT-Anforderungen.",
-    "form": {
-      "name": "Name",
-      "email": "E-Mail",
-      "message": "Nachricht",
-      "submit": "Senden"
-    },
-    "success": "Ihre Nachricht wurde gesendet!",
-    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten.",
-    "hero": {
-      "title": "",
-      "description": ""
+      "title": "[DE] Ready to Transform Placeholder?",
+      "description": "[DE] CTA Description Placeholder.",
+      "button": "[DE] Contact Us Now Placeholder",
+      "secondaryButton": "[DE] Schedule a Demo Placeholder"
     }
   },
   "solutions": {
     "title": "Lösungen",
     "description": "Entdecken Sie unsere innovativen Lösungen, die Ihr Unternehmen transformieren.",
-    "hero": {
-      "title": "Innovative Lösungen für moderne Unternehmen",
-      "subtitle": "Unternehmenslösungen",
-      "description": "Wir liefern hochmoderne Lösungen, die Ihre Geschäftsprozesse transformieren und nachhaltiges Wachstum fördern.",
-      "cta": "Lösungen erkunden",
-      "secondaryCta": "Beratungstermin vereinbaren"
-    },
-    "sectionTitle": "Unternehmenslösungen",
-    "sectionSubtitle": "Unsere Expertise",
-    "sectionDescription": "Entdecken Sie unser umfassendes Angebot an Unternehmenslösungen, die entwickelt wurden, um Ihre komplexesten Geschäftsherausforderungen zu bewältigen.",
-    "keyFeatures": "Hauptmerkmale",
-    "businessBenefits": "Geschäftsvorteile",
+    "text5": "[DE] Strategische Geschäftslösungen, die entwickelt wurden, um Ihre komplexesten Herausforderungen zu bewältigen. Unser innovativer Ansatz kombiniert Branchenexpertise mit modernster Technologie.",
+    "text6": "[DE] Maximieren Sie die Effizienz und fördern Sie nachhaltiges Wachstum mit unserem umfassenden Angebot an Geschäftslösungen. Wir sind Ihr Partner für betriebliche Exzellenz und Wettbewerbsvorteile.",
     "learnMore": "Mehr erfahren",
-    "cloud": {
-      "title": "Cloud-Transformation",
-      "description": "Migrieren und optimieren Sie Ihre Infrastruktur mit unseren umfassenden Cloud-Lösungen.",
+    "businessBenefits": "Geschäftsvorteile",
+    "keyFeatures": "Hauptmerkmale",
+    "sectionSubtitle": "Unsere Expertise",
+    "sectionTitle": "Unternehmenslosungen",
+    "sectionDescription": "Entdecken Sie unser umfassendes Angebot an Unternehmenslösungen, die entwickelt wurden, um Ihre komplexesten Geschäftsherausforderungen zu bewältigen.",
+    "hero": {
+      "subtitle": "Unternehmenslösungen",
+      "title": "Innovative Lösungen für moderne Unternehmen",
+      "description": "Wir liefern hochmoderne Lösungen, die darauf ausgelegt sind, Ihre Geschäftsabläufe zu transformieren und nachhaltiges Wachstum zu fördern.",
+      "cta": "Lösungen erkunden",
+      "secondaryCta": "Beratung vereinbaren"
+    },
+    "business": {
+      "title": "Business Intelligence",
+      "description": "Treffen Sie datengestützte Entscheidungen mit unseren umfassenden Business-Intelligence-Lösungen.",
       "features": {
-        "0": "Cloud-Migration & Strategie",
-        "1": "Multi-Cloud-Management",
-        "2": "Cloud-Kostenoptimierung",
-        "3": "Cloud-Sicherheit & Compliance"
+        "0": "Datenvisualisierung",
+        "1": "Leistungs-Dashboards",
+        "2": "Marktanalyse",
+        "3": "Berichtsautomatisierung"
       },
       "benefits": {
-        "0": "Erhöhte Betriebseffizienz",
+        "0": "Erhöhte betriebliche Effizienz",
+        "1": "Reduzierte Kosten und Ressourcenoptimierung",
+        "2": "Verbesserte Sicherheit und Compliance",
+        "3": "Verbesserte Skalierbarkeit und Flexibilität"
+      }
+    },
+    "security": {
+      "title": "Cybersicherheit",
+      "description": "[DE] Protect your business with comprehensive security solutions and best practices.",
+      "features": {
+        "0": "Sicherheitsbewertung",
+        "1": "Bedrohungserkennung & -reaktion",
+        "2": "Compliance-Management",
+        "3": "Sicherheitsschulung"
+      },
+      "benefits": {
+        "0": "Erhöhte betriebliche Effizienz",
+        "1": "Reduzierte Kosten und Ressourcenoptimierung",
+        "2": "Verbesserte Sicherheit und Compliance",
+        "3": "Verbesserte Skalierbarkeit und Flexibilität"
+      }
+    },
+    "digital": {
+      "title": "Digitale Transformation",
+      "description": "Modernisieren Sie Ihr Unternehmen mit modernsten digitalen Lösungen und Strategien.",
+      "features": {
+        "0": "Prozessautomatisierung",
+        "1": "Modernisierung von Legacy-Systemen",
+        "2": "Digitale Erfahrungsplattformen",
+        "3": "API-Integration"
+      },
+      "benefits": {
+        "0": "Erhöhte betriebliche Effizienz",
+        "1": "Reduzierte Kosten und Ressourcenoptimierung",
+        "2": "Verbesserte Sicherheit und Compliance",
+        "3": "Verbesserte Skalierbarkeit und Flexibilität"
+      }
+    },
+    "infrastructure": {
+      "title": "IT-Infrastruktur",
+      "description": "Aufbau und Wartung einer robusten, skalierbaren IT-Infrastruktur für Ihr Unternehmen.",
+      "features": {
+        "0": "Netzwerkdesign & -implementierung",
+        "1": "Server-Management",
+        "2": "Disaster Recovery",
+        "3": "IT-Support & -Wartung"
+      },
+      "benefits": {
+        "0": "Erhöhte betriebliche Effizienz",
         "1": "Reduzierte Kosten und Ressourcenoptimierung",
         "2": "Verbesserte Sicherheit und Compliance",
         "3": "Verbesserte Skalierbarkeit und Flexibilität"
@@ -204,103 +360,578 @@
         "3": "Prädiktive Analytik"
       },
       "benefits": {
-        "0": "Datengestützte Entscheidungsfindung",
-        "1": "Verbesserte Kundeneinblicke",
-        "2": "Optimierte Geschäftsprozesse",
-        "3": "Wettbewerbsvorteil"
+        "0": "Erhöhte betriebliche Effizienz",
+        "1": "Reduzierte Kosten und Ressourcenoptimierung",
+        "2": "Verbesserte Sicherheit und Compliance",
+        "3": "Verbesserte Skalierbarkeit und Flexibilität"
       }
     },
-    "security": {
-      "title": "Cybersicherheit",
-      "description": "Schützen Sie Ihr Unternehmen mit unseren umfassenden Sicherheitslösungen und Best Practices.",
+    "continuity": {
+      "title": "Geschäftskontinuität",
+      "description": "Stellen Sie sicher, dass Ihre Geschäftsabläufe auch bei Störungen reibungslos weiterlaufen.",
+      "hero": {
+        "title": "Sichern Sie die Widerstandsfähigkeit Ihres Unternehmens durch Kontinuitätsplanung",
+        "description": "Schützen Sie Ihre Organisation vor unerwarteten Unterbrechungen mit umfassenden Lösungen für Business Continuity und Disaster Recovery.",
+        "primaryButton": "Lösungen erkunden",
+        "secondaryButton": "Kontaktieren Sie uns"
+      },
       "features": {
-        "0": "Sicherheitsbewertung",
-        "1": "Bedrohungserkennung & -reaktion",
-        "2": "Compliance-Management",
-        "3": "Sicherheitsschulung"
+        "0": "Disaster-Recovery-Planung",
+        "1": "Backup- & Wiederherstellungslösungen",
+        "2": "Hochverfügbarkeitssysteme",
+        "3": "Business-Impact-Analyse"
+      },
+      "services": {
+        "0": {
+          "title": "Risikobewertung",
+          "description": "Umfassende Analyse potenzieller Bedrohungen und Schwachstellen für Ihren Geschäftsbetrieb."
+        },
+        "1": {
+          "title": "Business-Continuity-Planung",
+          "description": "Entwicklung detaillierter Pläne zur Aufrechterhaltung wesentlicher Funktionen während und nach einer Katastrophe."
+        },
+        "2": {
+          "title": "Backup- & Wiederherstellungslösungen",
+          "description": "Robuste Datensicherungs- und Wiederherstellungssysteme zum Schutz Ihrer kritischen Informationen."
+        },
+        "3": {
+          "title": "Disaster Recovery",
+          "description": "Umfassende Strategien zur schnellen Wiederherstellung von IT-Systemen und Daten nach einer Unterbrechung."
+        }
+      },
+      "process": {
+        "0": {
+          "title": "Bewertung",
+          "description": "Umfassende Analyse Ihrer Geschäftsprozesse, kritischen Systeme und potenziellen Risiken."
+        },
+        "1": {
+          "title": "Strategieentwicklung",
+          "description": "Erstellung maßgeschneiderter Business-Continuity- und Disaster-Recovery-Strategien."
+        },
+        "2": {
+          "title": "Implementierung",
+          "description": "Bereitstellung notwendiger Systeme, Werkzeuge und Verfahren zur Unterstützung Ihres Kontinuitätsplans."
+        },
+        "3": {
+          "title": "Testen & Schulung",
+          "description": "Regelmäßige Tests der Wiederherstellungsverfahren und Mitarbeiterschulungen zur Sicherstellung der Bereitschaft."
+        },
+        "4": {
+          "title": "Wartung & Updates",
+          "description": "Laufende Überprüfung und Aktualisierung, um Ihren Kontinuitätsplan an Geschäftsänderungen anzupassen."
+        }
+      },
+      "benefitsList": {
+        "0": "Minimierte Ausfallzeiten und Geschäftsunterbrechungen",
+        "1": "Geschützte Einnahmen und Kundenvertrauen",
+        "2": "Sicherstellung der Einhaltung gesetzlicher Vorschriften",
+        "3": "Verbesserte Widerstandsfähigkeit gegen Bedrohungen"
+      },
+      "servicesSection": {
+        "subtitle": "Unsere Dienstleistungen",
+        "title": "Umfassende Business Continuity Lösungen",
+        "description": "Wir bieten End-to-End-Lösungen für Business Continuity und Disaster Recovery, um sicherzustellen, dass Ihr Unternehmen jeder Unterbrechung standhält und sich schnell davon erholt."
+      },
+      "processSection": {
+        "subtitle": "Unser Ansatz",
+        "title": "Implementierungsprozess",
+        "description": "Unser strukturierter Ansatz gewährleistet eine umfassende und effektive Business-Continuity-Lösung, die auf Ihre spezifischen Bedürfnisse zugeschnitten ist."
       },
       "benefits": {
-        "0": "Reduzierte Sicherheitsrisiken",
-        "1": "Regulatorische Compliance",
-        "2": "Geschäftskontinuität",
-        "3": "Kundenvertrauen und -zuversicht"
+        "subtitle": "Warum es wichtig ist",
+        "title": "Die Vorteile der Geschäftskontinuitätsplanung",
+        "description": "Die Investition in die Geschäftskontinuitätsplanung bietet zahlreiche Vorteile, die über die reine Notfallwiederherstellung hinausgehen.",
+        "items": {
+          "0": {
+            "title": "Minimierte Ausfallzeiten",
+            "description": "Reduzieren Sie Geschäftsunterbrechungen mit schnellen Wiederherstellungsverfahren und -systemen."
+          },
+          "1": {
+            "title": "Geschützter Umsatz",
+            "description": "Schützen Sie Ihren Einkommensstrom durch Aufrechterhaltung kritischer Geschäftsfunktionen."
+          },
+          "2": {
+            "title": "Einhaltung von Vorschriften",
+            "description": "Erfüllen Sie Branchen- und Regierungsanforderungen für die Geschäftskontinuitätsplanung."
+          },
+          "3": {
+            "title": "Verbesserter Ruf",
+            "description": "Demonstrieren Sie Zuverlässigkeit gegenüber Kunden, Partnern und Interessengruppen."
+          },
+          "4": {
+            "title": "Wettbewerbsvorteil",
+            "description": "Verschaffen Sie sich einen Vorsprung gegenüber Wettbewerbern, die keine robusten Kontinuitätspläne haben."
+          },
+          "5": {
+            "title": "Mitarbeitervertrauen",
+            "description": "Stärken Sie das Vertrauen der Mitarbeiter mit klaren Verfahren für Notfallsituationen."
+          }
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihr Unternehmen zu schützen?",
+        "description": "Kontaktieren Sie unser Team noch heute, um zu besprechen, wie unsere Geschäftskontinuitätslösungen Ihre Organisation vor unerwarteten Störungen schützen können.",
+        "stats": {
+          "title": "Wussten Sie schon?",
+          "item1": "der Unternehmen erleben jährlich unerwartete Ausfallzeiten",
+          "item2": "durchschnittliche Kosten pro Stunde Ausfallzeit für mittelständische Unternehmen",
+          "item3": "der Unternehmen mit einem Wiederherstellungsplan überstehen größere Vorfälle"
+        },
+        "compliance": {
+          "title": "Compliance-bereit",
+          "description": "Unsere Lösungen helfen Ihnen, die regulatorischen Anforderungen zu erfüllen für:"
+        },
+        "benefits": {
+          "0": "Umfassende Risikobewertung und Planung",
+          "1": "Schnelle Wiederherstellung nach Störungen",
+          "2": "Fortlaufende Unterstützung und regelmäßige Planaktualisierungen"
+        },
+        "primaryButton": "Jetzt kontaktieren",
+        "secondaryButton": "Alle Lösungen erkunden"
       }
     },
-    "digital": {
-      "title": "Digitale Transformation",
-      "description": "Modernisieren Sie Ihr Unternehmen mit hochmodernen digitalen Lösungen und Strategien.",
+    "cloud": {
+      "title": "Cloud-Lösungen",
+      "description": "Skalierbare Cloud-Infrastruktur und Migrationsdienste für moderne Unternehmen.",
       "features": {
-        "0": "Prozessautomatisierung",
-        "1": "Modernisierung von Legacy-Systemen",
-        "2": "Digitale Erfahrungsplattformen",
-        "3": "API-Integration"
+        "0": "Cloud-Infrastruktur",
+        "1": "Cloud-Migration",
+        "2": "Cloud-Speicher"
       },
-      "benefits": {
-        "0": "Verbesserte Kundenerfahrung",
-        "1": "Optimierte Abläufe",
-        "2": "Schnellere Markteinführung",
-        "3": "Gesteigerte Innovation"
+      "hero": {
+        "title": "Enterprise Cloud-Lösungen",
+        "description": "Skalierbare, sichere und kosteneffektive Cloud-Infrastruktur und Migrationsdienste, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+        "primaryCta": "Jetzt starten",
+        "secondaryCta": "Dienste erkunden"
+      },
+      "services": {
+        "subtitle": "Unsere Cloud-Dienste",
+        "title": "Umfassende Cloud-Lösungen",
+        "description": "Wir bieten End-to-End-Cloud-Dienste, die Ihnen helfen, das volle Potenzial des Cloud-Computing zu nutzen.",
+        "0": {
+          "title": "Cloud-Infrastruktur",
+          "description": "Skalierbare und sichere Cloud-Infrastrukturlösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+          "features": [
+            "Infrastructure as a Service (IaaS)",
+            "Virtual Private Cloud (VPC)",
+            "Hybrid-Cloud-Lösungen"
+          ]
+        },
+        "1": {
+          "title": "Cloud-Migration",
+          "description": "Nahtlose Migration Ihrer Anwendungen und Daten in die Cloud mit minimaler Unterbrechung.",
+          "features": [
+            "Workload-Bewertung",
+            "Migrationsplanung",
+            "Post-Migrations-Support"
+          ]
+        },
+        "2": {
+          "title": "Cloud-Speicher & Datenbanken",
+          "description": "Zuverlässige Cloud-Speicher- und Datenbanklösungen für Ihre kritischen Daten.",
+          "features": [
+            "Objektspeicherlösungen",
+            "Database as a Service (DBaaS)",
+            "Datensicherung & Wiederherstellung"
+          ]
+        },
+        "3": {
+          "title": "Cloud-Sicherheit",
+          "description": "Umfassende Sicherheitslösungen zum Schutz Ihrer Cloud-Umgebung.",
+          "features": [
+            "Identitäts- & Zugriffsverwaltung",
+            "Verschlüsselung & Datenschutz",
+            "Sicherheitsüberwachung & Compliance"
+          ]
+        }
+      },
+      "approach": {
+        "subtitle": "Unser Cloud-Ansatz",
+        "title": "Cloud-Transformationsmethodik",
+        "description": "Unsere bewährte Methodik gewährleistet einen reibungslosen Übergang in die Cloud mit minimaler Unterbrechung Ihres Geschäftsbetriebs.",
+        "items": {
+          "0": {
+            "title": "Bewertung",
+            "description": "Bewerten Sie Ihre aktuelle Infrastruktur und identifizieren Sie Cloud-Migrationsmöglichkeiten."
+          },
+          "1": {
+            "title": "Planung",
+            "description": "Entwickeln Sie eine umfassende Cloud-Strategie und einen Migrationsfahrplan."
+          },
+          "2": {
+            "title": "Design",
+            "description": "Entwerfen Sie eine skalierbare, sichere und kosteneffektive Cloud-Architektur."
+          },
+          "3": {
+            "title": "Migration",
+            "description": "Führen Sie die Migration mit minimaler Unterbrechung Ihres Geschäftsbetriebs durch."
+          },
+          "4": {
+            "title": "Optimierung",
+            "description": "Optimieren Sie Ihre Cloud-Umgebung kontinuierlich für Leistung und Kosten."
+          },
+          "5": {
+            "title": "Management",
+            "description": "Bieten Sie laufendes Management, Überwachung und Support für Ihre Cloud-Infrastruktur."
+          }
+        }
+      },
+      "stats": {
+        "0": {
+          "number": "99,9%",
+          "label": "Verfügbarkeitsgarantie"
+        },
+        "1": {
+          "number": "40%",
+          "label": "Kostenreduzierung"
+        },
+        "2": {
+          "number": "500+",
+          "label": "erfolgreiche Cloud-Migrationen"
+        },
+        "3": {
+          "number": "24/7",
+          "label": "Überwachung und Support"
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihr Unternehmen mit Cloud zu transformieren?",
+        "description": "Kontaktieren Sie noch heute unsere Cloud-Experten, um zu besprechen, wie wir Ihnen helfen können, die Kraft des Cloud-Computing zu nutzen.",
+        "primaryButton": "Beratung vereinbaren",
+        "secondaryButton": "Weitere Dienste erkunden"
       }
     },
-    "infrastructure": {
-      "title": "IT-Infrastruktur",
-      "description": "Bauen und warten Sie eine robuste, skalierbare IT-Infrastruktur für Ihr Unternehmen.",
-      "features": {
-        "0": "Netzwerkdesign & -implementierung",
-        "1": "Server-Management",
-        "2": "Disaster Recovery",
-        "3": "IT-Support & -Wartung"
+    "datamanagement": {
+      "title": "Datenmanagement",
+      "description": "Umfassende Datenmanagementlösungen zur effektiven Organisation, zum Schutz und zur Nutzung Ihrer Geschäftsdaten.",
+      "text5": "[DE] Data Management text5 placeholder.",
+      "text6": "[DE] Data Management text6 placeholder.",
+      "hero": {
+        "title": "Unternehmens-Datenmanagementlösungen",
+        "subtitle": "Erschließen Sie die Kraft Ihrer Daten",
+        "description": "Verwandeln Sie Ihre Daten in einen strategischen Vorteil mit unseren umfassenden Datenmanagementlösungen, die Genauigkeit, Zugänglichkeit und Sicherheit gewährleisten.",
+        "primaryCta": "Datendienste erkunden",
+        "secondaryCta": "Beratungstermin vereinbaren"
       },
-      "benefits": {
-        "0": "Zuverlässige und stabile Systeme",
-        "1": "Reduzierte Ausfallzeiten",
-        "2": "Optimierte Leistung",
-        "3": "Skalierbare Architektur"
-      }
-    },
-    "business": {
-      "title": "Business Intelligence",
-      "description": "Treffen Sie datengestützte Entscheidungen mit unseren umfassenden Business-Intelligence-Lösungen.",
-      "features": {
-        "0": "Datenvisualisierung",
-        "1": "Leistungs-Dashboards",
-        "2": "Marktanalyse",
-        "3": "Berichtsautomatisierung"
+      "services": {
+        "subtitle": "Unsere Dienstleistungen",
+        "title": "Umfassende Datenmanagement-Dienste",
+        "description": "Wir bieten End-to-End-Datenmanagementdienste, um Ihnen zu helfen, Ihre Daten effektiv zu sammeln, zu speichern, zu verarbeiten und zu analysieren.",
+        "0": {
+          "title": "Daten-Governance",
+          "description": "Etablieren Sie robuste Daten-Governance-Frameworks, um Datenqualität, Compliance und Sicherheit zu gewährleisten.",
+          "features": [
+            "Datenqualitätsmanagement",
+            "Regulatorische Compliance",
+            "Datensicherheitsprotokolle"
+          ]
+        },
+        "1": {
+          "title": "Datenintegration",
+          "description": "Integrieren Sie Daten aus mehreren Quellen nahtlos, um eine einheitliche Sicht auf Ihr Unternehmen zu schaffen.",
+          "features": [
+            "ETL-Prozesse",
+            "API-Integrationen",
+            "Echtzeit-Datenstreaming"
+          ]
+        },
+        "2": {
+          "title": "Datenbankmanagement",
+          "description": "Entwerfen, implementieren und warten Sie effiziente Datenbanksysteme, die auf Ihre Bedürfnisse zugeschnitten sind.",
+          "features": [
+            "Datenbankarchitektur",
+            "Leistungsoptimierung",
+            "Hochverfügbarkeitslösungen"
+          ]
+        },
+        "3": {
+          "title": "Business Intelligence",
+          "description": "Transformieren Sie Rohdaten in aussagekräftige Erkenntnisse, um fundierte Geschäftsentscheidungen zu treffen.",
+          "features": [
+            "Benutzerdefinierte Dashboards",
+            "Prädiktive Analytik",
+            "Berichtsautomatisierung"
+          ]
+        }
       },
-      "benefits": {
-        "0": "Verbesserte Entscheidungsfindung",
-        "1": "Echtzeit-Geschäftseinblicke",
-        "2": "Erhöhte Betriebseffizienz",
-        "3": "Wettbewerbsvorteil auf dem Markt"
+      "approach": {
+        "subtitle": "Unser Ansatz",
+        "title": "Methodischer Datenmanagementprozess",
+        "description": "Wir verfolgen einen strukturierten Ansatz, um sicherzustellen, dass Ihre Datenmanagement-Initiativen maximalen Wert liefern.",
+        "items": {
+          "0": {
+            "title": "Bewertung",
+            "description": "Bewerten Sie Ihre aktuelle Datenlandschaft, identifizieren Sie Herausforderungen und definieren Sie Ziele."
+          },
+          "1": {
+            "title": "Strategieentwicklung",
+            "description": "Erstellen Sie eine umfassende Datenstrategie, die auf Ihre Geschäftsziele abgestimmt ist."
+          },
+          "2": {
+            "title": "Architekturdesign",
+            "description": "Entwerfen Sie eine skalierbare und sichere Datenarchitektur, die Ihren Anforderungen entspricht."
+          },
+          "3": {
+            "title": "Implementierung",
+            "description": "Setzen Sie Lösungen unter Verwendung von Branchenstandards und modernsten Technologien ein."
+          },
+          "4": {
+            "title": "Integration",
+            "description": "Verbinden Sie Datenquellen und Systeme, um ein einheitliches Datenökosystem zu schaffen."
+          },
+          "5": {
+            "title": "Optimierung",
+            "description": "Verfeinern und verbessern Sie kontinuierlich Ihre Datenmanagementprozesse."
+          }
+        }
+      },
+      "technologies": {
+        "subtitle": "Technologien",
+        "title": "Führende Datentechnologien",
+        "description": "Wir nutzen die neuesten Technologien, um robuste Datenmanagementlösungen zu liefern.",
+        "databases": ["Oracle", "SQL Server", "PostgreSQL", "MongoDB", "Snowflake"],
+        "integration": ["Informatica", "Talend", "Apache NiFi", "MuleSoft", "Azure Data Factory"],
+        "analytics": ["Tableau", "Power BI", "Looker", "Qlik", "SAS"],
+        "bigdata": ["Hadoop", "Spark", "Kafka", "Databricks", "AWS EMR"],
+        "ai": ["TensorFlow", "PyTorch", "Azure ML", "AWS SageMaker", "H2O.ai"]
+      },
+      "stats": {
+        "0": {
+          "number": "99,9%",
+          "label": "Datenverfügbarkeit"
+        },
+        "1": {
+          "number": "60%",
+          "label": "Kostenreduzierung"
+        },
+        "2": {
+          "number": "85%",
+          "label": "Schnellere Erkenntnisse"
+        },
+        "3": {
+          "number": "24/7",
+          "label": "Support"
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihr Datenmanagement zu transformieren?",
+        "description": "Kontaktieren Sie uns noch heute, um zu besprechen, wie unsere Datenmanagementlösungen Ihrem Unternehmen helfen können.",
+        "primaryButton": "Kontaktieren Sie uns",
+        "secondaryButton": "Mehr erfahren"
       }
     },
     "cta": {
       "title": "Bereit, Ihr Unternehmen zu transformieren?",
-      "description": "Kontaktieren Sie noch heute unser Expertenteam, um zu besprechen, wie unsere Lösungen Ihnen helfen können, Ihre Geschäftsziele zu erreichen.",
-      "benefit1": "Maßgeschneiderte Lösungen für Ihre spezifischen Bedürfnisse",
-      "benefit2": "Expertenberatung und -implementierung",
-      "benefit3": "Kontinuierliche Unterstützung und Optimierung",
-      "button": "Jetzt kontaktieren",
       "formTitle": "Informationen anfordern",
+      "description": "Kontaktieren Sie unser Expertenteam noch heute, um zu besprechen, wie unsere Lösungen Ihnen helfen können, Ihre Geschäftsziele zu erreichen.",
+      "benefit1": "Maßgeschneiderte Lösungen für Ihre spezifischen Bedürfnisse",
+      "benefit2": "Expertenberatung und Implementierung",
+      "benefit3": "Fortlaufende Unterstützung und Optimierung",
+      "button": "Jetzt kontaktieren",
       "form": {
         "name": "Ihr Name",
         "email": "E-Mail-Adresse",
         "solution": "Lösung von Interesse",
         "selectSolution": "Wählen Sie eine Lösung",
         "message": "Nachricht",
+        "messagePlaceholder": "Erzählen Sie uns über Ihre Projektanforderungen",
+        "submit": "Anfrage senden"
+      }
+    },
+    "managed": {
+      "title": "Managed Services",
+      "hero": {
+        "title": "Konzentrieren Sie sich auf Ihr Geschäft, überlassen Sie uns die IT",
+        "description": "Umfassende Managed IT-Services, die 24/7-Support, Überwachung und Wartung für Ihre gesamte Technologieinfrastruktur bieten.",
+        "primaryCta": "Jetzt starten",
+        "secondaryCta": "Service-Pläne anzeigen"
+      },
+      "benefits": {
+        "subtitle": "Warum unsere Managed Services wählen",
+        "title": "Die Vorteile von Managed IT-Services",
+        "description": "Unsere Managed Services bieten umfassenden IT-Support, damit Sie sich auf Ihr Kerngeschäft konzentrieren können, während wir uns um Ihre Technologieanforderungen kümmern.",
+        "0": {
+          "title": "24/7 Support & Überwachung",
+          "description": "Rund-um-die-Uhr-Überwachung und Support, um sicherzustellen, dass Ihre Systeme immer optimal laufen."
+        },
+        "1": {
+          "title": "Verbesserte Sicherheit",
+          "description": "Proaktives Sicherheitsmanagement zum Schutz Ihres Unternehmens vor sich entwickelnden Bedrohungen."
+        },
+        "2": {
+          "title": "Vorhersehbare Kosten",
+          "description": "Feste monatliche Gebühren erleichtern die Budgetierung und eliminieren unerwartete IT-Ausgaben."
+        },
+        "3": {
+          "title": "Proaktive Wartung",
+          "description": "Regelmäßige Updates und Wartung, um Probleme zu verhindern, bevor sie sich auf Ihr Unternehmen auswirken."
+        }
+      },
+      "plans": {
+        "subtitle": "Flexible Service-Pläne",
+        "title": "Wählen Sie den richtigen Plan für Ihr Unternehmen",
+        "description": "Wir bieten flexible Service-Pläne, die auf die einzigartigen Bedürfnisse Ihres Unternehmens zugeschnitten sind, von kleinen Startups bis hin zu großen Unternehmen.",
+        "getStarted": "Jetzt starten",
+        "recommended": "Am beliebtesten"
+      },
+      "levels": [
+        {
+          "title": "Essential Support",
+          "description": "Grundlegende Überwachung und Support für kleine Unternehmen.",
+          "features": [
+            "8/5 Helpdesk-Support",
+            "Grundlegende Systemüberwachung",
+            "Monatliche Gesundheitsberichte",
+            "Fernwartung"
+          ]
+        },
+        {
+          "title": "Business Plus",
+          "description": "Umfassender Support für wachsende Unternehmen.",
+          "features": [
+            "12/7 Helpdesk-Support",
+            "Erweiterte Überwachung & Warnungen",
+            "Wöchentliche Gesundheitsberichte",
+            "Proaktive Wartung",
+            "Vierteljährliche Strategieüberprüfungen"
+          ]
+        },
+        {
+          "title": "Enterprise",
+          "description": "Umfassendes IT-Management für Unternehmen.",
+          "features": [
+            "24/7 Helpdesk-Support",
+            "Umfassende Überwachung",
+            "Tägliche Gesundheitsberichte",
+            "Proaktive Wartung",
+            "Monatliche Strategieüberprüfungen",
+            "Dedizierter Account Manager",
+            "Vor-Ort-Support"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Bereit, Ihr IT-Management zu transformieren?",
+        "description": "Kontaktieren Sie unser Team noch heute, um zu besprechen, wie unsere Managed Services Ihnen helfen können, Kosten zu senken, die Effizienz zu verbessern und sich auf Ihr Kerngeschäft zu konzentrieren.",
+        "benefits": [
+          "Keine langfristigen Verträge erforderlich",
+          "Transparente Preisgestaltung ohne versteckte Gebühren",
+          "Dedizierter Account Manager für persönlichen Service"
+        ],
+        "primaryButton": "Jetzt kontaktieren",
+        "secondaryButton": "Alle Lösungen erkunden",
+        "support": {
+          "title": "Benötigen Sie sofortige Unterstützung?",
+          "description": "Unser Support-Team ist rund um die Uhr verfügbar",
+          "hours": "Support-Zeiten",
+          "hoursValue": "24 Stunden / 7 Tage die Woche",
+          "phone": "Support-Hotline",
+          "portal": "Kunden-Portal",
+          "portalDescription": "Melden Sie sich an für priorisierten Support"
+        }
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie uns für Ihre IT-Bedürfnisse.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Ihr Name",
+        "email": "E-Mail",
+        "emailPlaceholder": "ihre.email@beispiel.de",
+        "company": "Unternehmen",
+        "companyPlaceholder": "Ihr Unternehmensname",
+        "phone": "Telefon",
+        "phonePlaceholder": "Ihre Telefonnummer",
+        "service": "Dienstleistung",
+        "servicePlaceholder": "Wählen Sie eine Dienstleistung",
+        "message": "Nachricht",
         "messagePlaceholder": "Erzählen Sie uns von Ihren Projektanforderungen",
         "submit": "Anfrage senden"
       }
+    },
+    "error": {
+      "title": "Etwas ist schiefgelaufen",
+      "description": "Wir entschuldigen uns für die Unannehmlichkeiten. Ein unerwarteter Fehler ist aufgetreten.",
+      "tryAgain": "Erneut versuchen",
+      "text5": "Unser Team wurde benachrichtigt und arbeitet daran, das Problem so schnell wie möglich zu beheben. Vielen Dank für Ihre Geduld."
+    },
+    "footer": {
+      "serviceLinks": {
+        "cloud": "Cloud-Lösungen",
+        "software": "Softwareentwicklung",
+        "strategy": "IT-Strategie",
+        "security": "Cybersicherheit",
+        "data": "Datenmanagement",
+        "ai": "KI & Maschinelles Lernen"
+      },
+      "solutionLinks": {
+        "transformation": "Digitale Transformation",
+        "infrastructure": "IT-Infrastruktur",
+        "managed": "Managed Services",
+        "continuity": "Geschäftskontinuität"
+      },
+      "resourceLinks": {
+        "caseStudies": "Fallstudien",
+        "blog": "Blog",
+        "whitepapers": "Whitepaper",
+        "webinars": "Webinare"
+      },
+      "stats": {
+        "clients": "500+",
+        "clientsLabel": "Zufriedene Kunden",
+        "experience": "15+",
+        "experienceLabel": "Jahre Erfahrung",
+        "satisfaction": "98%",
+        "satisfactionLabel": "Kundenzufriedenheit",
+        "support": "24/7",
+        "supportLabel": "Technischer Support"
+      },
+      "cta": {
+        "title": "Bereit, Ihr Unternehmen zu transformieren?",
+        "description": "Kontaktieren Sie noch heute unser Team, um zu besprechen, wie wir Ihnen helfen können, Ihre Technologieziele zu erreichen.",
+        "button": "Kontakt aufnehmen"
+      },
+      "newsletter": {
+        "title": "Abonnieren Sie unseren Newsletter",
+        "description": "Bleiben Sie über die neuesten Technologietrends und Nachrichten auf dem Laufenden.",
+        "placeholder": "Ihre E-Mail-Adresse",
+        "button": "Abonnieren",
+        "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abbestellbar."
+      },
+      "contact": {
+        "title": "Kontaktinformationen",
+        "address": "123 Tech Straße, Silicon Valley, CA 94043",
+        "phone": "+1 (555) 123-4567",
+        "email": "info@techconsult.com"
+      },
+      "copyright": " 2023 TechConsult GmbH. Alle Rechte vorbehalten.",
+      "companyInfo": "TechConsult ist ein führendes IT-Beratungsunternehmen, das innovative Technologielösungen für Unternehmen jeder Größe anbietet. Seit mehr als 15 Jahren unterstützen wir Kunden bei der digitalen Transformation.",
+      "certification": "ISO 27001 & DSGVO zertifiziert",
+      "certifications": {
+        "gdpr": "DSGVO-konform",
+        "award": "Preisgekrönter Service",
+        "microsoft": "Microsoft Gold Partner",
+        "iso": "ISO 27001 zertifiziert"
+      },
+      "contactInfo": {
+        "email": "info@techconsult.com",
+        "hours": "Mo-Fr: 9-18 Uhr MEZ",
+        "address": "Musterstraße 123, 10115 Berlin, Deutschland",
+        "phone": "+49 123 456 789"
+      },
+      "sections": {
+        "company": "Unternehmen",
+        "services": "Dienstleistungen",
+        "solutions": "Lösungen",
+        "resources": "Ressourcen",
+        "contact": "Kontakt"
+      },
+      "quickLinks": {
+        "partner": "Partner-Portal",
+        "client": "Kunden-Login",
+        "sitemap": "Seitenverzeichnis"
+      }
     }
-  },
-  "error": {
-    "title": "Etwas ist schiefgelaufen",
-    "description": "Wir entschuldigen uns für die Unannehmlichkeiten. Ein unerwarteter Fehler ist aufgetreten.",
-    "tryAgain": "Erneut versuchen"
-  },
-  "notFound": {
-    "title": "Seite nicht gefunden",
-    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
-    "returnHome": "Zurück zur Startseite"
   }
 }
