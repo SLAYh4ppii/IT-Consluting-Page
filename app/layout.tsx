@@ -10,6 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // DO NOT wrap with <html> or <body> here! Let [locale]/layout.tsx handle it.
-  return <>{children}</>;
+  return (
+    <html suppressHydrationWarning>
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
 }

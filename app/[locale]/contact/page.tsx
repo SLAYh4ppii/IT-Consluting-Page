@@ -70,7 +70,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                 <p className="text-muted-foreground mb-8">
-                  Have a question or want to discuss a project? We'd love to hear from you.
+                  Have a question or want to discuss a project? We&apos;d love to hear from you.
                 </p>
               </div>
               <div className="space-y-4">

@@ -3,9 +3,12 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "solutions": "Solutions",
     "contact": "Contact",
     "navigation": "Navigation",
-    "imprint": "Imprint"
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "theme": {
     "toggle": "Toggle theme",
@@ -42,6 +45,14 @@
   "services": {
     "title": "Our Services",
     "description": "Discover our comprehensive range of IT services designed to empower your business.",
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Enterprise Solutions",
+    "sectionDescription": "We provide comprehensive IT solutions tailored to your business needs with industry-leading expertise and personalized service.",
+    "services": {
+      "sectionTitle": "Our Services",
+      "sectionSubtitle": "Enterprise Solutions",
+      "sectionDescription": "We provide comprehensive IT solutions tailored to your business needs with industry-leading expertise and personalized service."
+    },
     "cloud": {
       "title": "Cloud Solutions",
       "description": "Migration, optimization, and management for AWS, Azure, and Google Cloud. Unlock agility and cost savings.",
@@ -100,7 +111,39 @@
     },
     "hero": {
       "title": "Comprehensive IT Services for Your Success",
-      "description": "Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business."
+      "subtitle": "Professional IT Services",
+      "description": "Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business.",
+      "cta": "Explore Our Services",
+      "secondaryCta": "Learn More"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose TechConsult",
+      "subtitle": "Our Difference",
+      "description": "We combine industry expertise with innovative solutions to deliver exceptional results for our clients.",
+      "reasons": {
+        "expertise": {
+          "title": "Industry Expertise",
+          "description": "Our team brings decades of experience across various industries and technologies."
+        },
+        "customized": {
+          "title": "Customized Solutions",
+          "description": "We develop tailored strategies that address your unique business challenges."
+        },
+        "support": {
+          "title": "24/7 Support",
+          "description": "Our dedicated support team is always available to assist you with any issues."
+        },
+        "innovation": {
+          "title": "Continuous Innovation",
+          "description": "We stay at the forefront of technology to provide cutting-edge solutions."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your IT Infrastructure?",
+      "description": "Contact our team today to discuss how we can help you achieve your business goals through innovative IT solutions.",
+      "button": "Contact Us Now",
+      "secondaryButton": "Schedule a Demo"
     }
   },
   "contact": {
@@ -118,5 +161,146 @@
       "title": "",
       "description": ""
     }
+  },
+  "solutions": {
+    "title": "Solutions",
+    "description": "Discover our innovative solutions designed to transform your business.",
+    "hero": {
+      "title": "Innovative Solutions for Modern Businesses",
+      "subtitle": "Enterprise Solutions",
+      "description": "We deliver cutting-edge solutions designed to transform your business operations and drive sustainable growth.",
+      "cta": "Explore Solutions",
+      "secondaryCta": "Schedule Consultation"
+    },
+    "sectionTitle": "Enterprise Solutions",
+    "sectionSubtitle": "Our Expertise",
+    "sectionDescription": "Discover our comprehensive range of enterprise solutions designed to address your most complex business challenges.",
+    "keyFeatures": "Key Features",
+    "businessBenefits": "Business Benefits",
+    "learnMore": "Learn More",
+    "cloud": {
+      "title": "Cloud Transformation",
+      "description": "Migrate and optimize your infrastructure with our comprehensive cloud solutions.",
+      "features": {
+        "0": "Cloud Migration & Strategy",
+        "1": "Multi-Cloud Management",
+        "2": "Cloud Cost Optimization",
+        "3": "Cloud Security & Compliance"
+      },
+      "benefits": {
+        "0": "Increased operational efficiency",
+        "1": "Reduced costs and resource optimization",
+        "2": "Enhanced security and compliance",
+        "3": "Improved scalability and flexibility"
+      }
+    },
+    "data": {
+      "title": "Data & Analytics",
+      "description": "Transform your data into actionable insights with our advanced analytics solutions.",
+      "features": {
+        "0": "Data Warehousing",
+        "1": "Business Intelligence",
+        "2": "Big Data Processing",
+        "3": "Predictive Analytics"
+      },
+      "benefits": {
+        "0": "Data-driven decision making",
+        "1": "Improved customer insights",
+        "2": "Optimized business processes",
+        "3": "Competitive advantage"
+      }
+    },
+    "security": {
+      "title": "Cybersecurity",
+      "description": "Protect your business with our comprehensive security solutions and best practices.",
+      "features": {
+        "0": "Security Assessment",
+        "1": "Threat Detection & Response",
+        "2": "Compliance Management",
+        "3": "Security Training"
+      },
+      "benefits": {
+        "0": "Reduced security risks",
+        "1": "Regulatory compliance",
+        "2": "Business continuity",
+        "3": "Customer trust and confidence"
+      }
+    },
+    "digital": {
+      "title": "Digital Transformation",
+      "description": "Modernize your business with cutting-edge digital solutions and strategies.",
+      "features": {
+        "0": "Process Automation",
+        "1": "Legacy System Modernization",
+        "2": "Digital Experience Platforms",
+        "3": "API Integration"
+      },
+      "benefits": {
+        "0": "Improved customer experience",
+        "1": "Streamlined operations",
+        "2": "Faster time to market",
+        "3": "Increased innovation"
+      }
+    },
+    "infrastructure": {
+      "title": "IT Infrastructure",
+      "description": "Build and maintain a robust, scalable IT infrastructure for your business.",
+      "features": {
+        "0": "Network Design & Implementation",
+        "1": "Server Management",
+        "2": "Disaster Recovery",
+        "3": "IT Support & Maintenance"
+      },
+      "benefits": {
+        "0": "Reliable and stable systems",
+        "1": "Reduced downtime",
+        "2": "Optimized performance",
+        "3": "Scalable architecture"
+      }
+    },
+    "business": {
+      "title": "Business Intelligence",
+      "description": "Make data-driven decisions with our comprehensive business intelligence solutions.",
+      "features": {
+        "0": "Data Visualization",
+        "1": "Performance Dashboards",
+        "2": "Market Analysis",
+        "3": "Reporting Automation"
+      },
+      "benefits": {
+        "0": "Improved decision making",
+        "1": "Real-time business insights",
+        "2": "Increased operational efficiency",
+        "3": "Competitive market advantage"
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Business?",
+      "description": "Contact our team of experts today to discuss how our solutions can help you achieve your business goals.",
+      "benefit1": "Customized solutions for your specific needs",
+      "benefit2": "Expert consultation and implementation",
+      "benefit3": "Ongoing support and optimization",
+      "button": "Contact Us Now",
+      "formTitle": "Request Information",
+      "form": {
+        "name": "Your Name",
+        "email": "Email Address",
+        "solution": "Solution of Interest",
+        "selectSolution": "Select a solution",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your project requirements",
+        "submit": "Submit Request"
+      }
+    }
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "We apologize for the inconvenience. An unexpected error has occurred.",
+    "tryAgain": "Try again"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "returnHome": "Return to Home"
   }
 }

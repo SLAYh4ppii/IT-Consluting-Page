@@ -24,32 +24,35 @@ export default async function LocaleLayout({
 
   // DEBUG: Log locale to server console
   console.log('[locale]/layout.tsx loaded with locale:', locale);
+  console.log('Loading messages for locale:', locale);
 
   let messages;
   try {
+    // Verbesserte Fehlerbehandlung beim Laden der Übersetzungen
     messages = (await import(`../../messages/${locale}.json`)).default;
+    console.log('Translation keys loaded:', Object.keys(messages));
+    
+    // Überprüfen, ob der services-Namespace vorhanden ist
+    if (!messages.services) {
+      console.error('Services translations missing for locale:', locale);
+    }
   } catch (error) {
+    console.error('Error loading translations:', error);
     notFound();
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="min-h-screen flex flex-col">
-              <Navbar />
-              <main className="flex-grow">{children}</main>
-              <Footer />
-            </div>
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <Navbar />
+        <main className="flex-grow min-h-screen">{children}</main>
+        <Footer />
+      </ThemeProvider>
+    </NextIntlClientProvider>
   );
 }

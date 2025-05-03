@@ -3,9 +3,12 @@
     "home": "Startseite",
     "about": "Über uns",
     "services": "Dienstleistungen",
+    "solutions": "Lösungen",
     "contact": "Kontakt",
     "navigation": "Navigation",
-    "imprint": "Impressum"
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
   },
   "theme": {
     "toggle": "Design wechseln",
@@ -42,6 +45,14 @@
   "services": {
     "title": "Unsere Dienstleistungen",
     "description": "Entdecken Sie unser umfassendes Angebot an IT-Dienstleistungen zur Stärkung Ihres Unternehmens.",
+    "sectionTitle": "Unsere Dienstleistungen",
+    "sectionSubtitle": "Unternehmenslösungen",
+    "sectionDescription": "Wir bieten umfassende IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind, mit branchenführender Expertise und persönlichem Service.",
+    "services": {
+      "sectionTitle": "Unsere Dienstleistungen",
+      "sectionSubtitle": "Unternehmenslösungen",
+      "sectionDescription": "Wir bieten umfassende IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind, mit branchenführender Expertise und persönlichem Service."
+    },
     "cloud": {
       "title": "Cloud-Lösungen",
       "description": "Migration, Optimierung und Verwaltung für AWS, Azure und Google Cloud. Erreichen Sie mehr Agilität und Kosteneinsparungen.",
@@ -100,7 +111,39 @@
     },
     "hero": {
       "title": "Umfassende IT-Dienstleistungen für Ihren Erfolg",
-      "description": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens."
+      "subtitle": "Professionelle IT-Dienstleistungen",
+      "description": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens.",
+      "cta": "Unsere Dienstleistungen entdecken",
+      "secondaryCta": "Mehr erfahren"
+    },
+    "whyChooseUs": {
+      "title": "Warum TechConsult wählen",
+      "subtitle": "Unser Unterschied",
+      "description": "Wir kombinieren Branchenexpertise mit innovativen Lösungen, um außergewöhnliche Ergebnisse für unsere Kunden zu erzielen.",
+      "reasons": {
+        "expertise": {
+          "title": "Branchenexpertise",
+          "description": "Unser Team bringt jahrzehntelange Erfahrung in verschiedenen Branchen und Technologien mit."
+        },
+        "customized": {
+          "title": "Maßgeschneiderte Lösungen",
+          "description": "Wir entwickeln maßgeschneiderte Strategien, die Ihre einzigartigen Geschäftsherausforderungen lösen."
+        },
+        "support": {
+          "title": "24/7 Support",
+          "description": "Unser engagiertes Support-Team steht Ihnen jederzeit zur Verfügung, um Ihnen bei Problemen zu helfen."
+        },
+        "innovation": {
+          "title": "Kontinuierliche Innovation",
+          "description": "Wir bleiben an der Spitze der Technologie, um hochmoderne Lösungen anzubieten."
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre IT-Infrastruktur zu transformieren?",
+      "description": "Kontaktieren Sie unser Team noch heute, um zu besprechen, wie wir Ihnen helfen können, Ihre Geschäftsziele durch innovative IT-Lösungen zu erreichen.",
+      "button": "Jetzt Kontakt aufnehmen",
+      "secondaryButton": "Demo vereinbaren"
     }
   },
   "contact": {
@@ -118,5 +161,146 @@
       "title": "",
       "description": ""
     }
+  },
+  "solutions": {
+    "title": "Lösungen",
+    "description": "Entdecken Sie unsere innovativen Lösungen, die Ihr Unternehmen transformieren.",
+    "hero": {
+      "title": "Innovative Lösungen für moderne Unternehmen",
+      "subtitle": "Unternehmenslösungen",
+      "description": "Wir liefern hochmoderne Lösungen, die Ihre Geschäftsprozesse transformieren und nachhaltiges Wachstum fördern.",
+      "cta": "Lösungen erkunden",
+      "secondaryCta": "Beratungstermin vereinbaren"
+    },
+    "sectionTitle": "Unternehmenslösungen",
+    "sectionSubtitle": "Unsere Expertise",
+    "sectionDescription": "Entdecken Sie unser umfassendes Angebot an Unternehmenslösungen, die entwickelt wurden, um Ihre komplexesten Geschäftsherausforderungen zu bewältigen.",
+    "keyFeatures": "Hauptmerkmale",
+    "businessBenefits": "Geschäftsvorteile",
+    "learnMore": "Mehr erfahren",
+    "cloud": {
+      "title": "Cloud-Transformation",
+      "description": "Migrieren und optimieren Sie Ihre Infrastruktur mit unseren umfassenden Cloud-Lösungen.",
+      "features": {
+        "0": "Cloud-Migration & Strategie",
+        "1": "Multi-Cloud-Management",
+        "2": "Cloud-Kostenoptimierung",
+        "3": "Cloud-Sicherheit & Compliance"
+      },
+      "benefits": {
+        "0": "Erhöhte Betriebseffizienz",
+        "1": "Reduzierte Kosten und Ressourcenoptimierung",
+        "2": "Verbesserte Sicherheit und Compliance",
+        "3": "Verbesserte Skalierbarkeit und Flexibilität"
+      }
+    },
+    "data": {
+      "title": "Daten & Analytik",
+      "description": "Verwandeln Sie Ihre Daten in umsetzbare Erkenntnisse mit unseren fortschrittlichen Analyselösungen.",
+      "features": {
+        "0": "Data Warehousing",
+        "1": "Business Intelligence",
+        "2": "Big-Data-Verarbeitung",
+        "3": "Prädiktive Analytik"
+      },
+      "benefits": {
+        "0": "Datengestützte Entscheidungsfindung",
+        "1": "Verbesserte Kundeneinblicke",
+        "2": "Optimierte Geschäftsprozesse",
+        "3": "Wettbewerbsvorteil"
+      }
+    },
+    "security": {
+      "title": "Cybersicherheit",
+      "description": "Schützen Sie Ihr Unternehmen mit unseren umfassenden Sicherheitslösungen und Best Practices.",
+      "features": {
+        "0": "Sicherheitsbewertung",
+        "1": "Bedrohungserkennung & -reaktion",
+        "2": "Compliance-Management",
+        "3": "Sicherheitsschulung"
+      },
+      "benefits": {
+        "0": "Reduzierte Sicherheitsrisiken",
+        "1": "Regulatorische Compliance",
+        "2": "Geschäftskontinuität",
+        "3": "Kundenvertrauen und -zuversicht"
+      }
+    },
+    "digital": {
+      "title": "Digitale Transformation",
+      "description": "Modernisieren Sie Ihr Unternehmen mit hochmodernen digitalen Lösungen und Strategien.",
+      "features": {
+        "0": "Prozessautomatisierung",
+        "1": "Modernisierung von Legacy-Systemen",
+        "2": "Digitale Erfahrungsplattformen",
+        "3": "API-Integration"
+      },
+      "benefits": {
+        "0": "Verbesserte Kundenerfahrung",
+        "1": "Optimierte Abläufe",
+        "2": "Schnellere Markteinführung",
+        "3": "Gesteigerte Innovation"
+      }
+    },
+    "infrastructure": {
+      "title": "IT-Infrastruktur",
+      "description": "Bauen und warten Sie eine robuste, skalierbare IT-Infrastruktur für Ihr Unternehmen.",
+      "features": {
+        "0": "Netzwerkdesign & -implementierung",
+        "1": "Server-Management",
+        "2": "Disaster Recovery",
+        "3": "IT-Support & -Wartung"
+      },
+      "benefits": {
+        "0": "Zuverlässige und stabile Systeme",
+        "1": "Reduzierte Ausfallzeiten",
+        "2": "Optimierte Leistung",
+        "3": "Skalierbare Architektur"
+      }
+    },
+    "business": {
+      "title": "Business Intelligence",
+      "description": "Treffen Sie datengestützte Entscheidungen mit unseren umfassenden Business-Intelligence-Lösungen.",
+      "features": {
+        "0": "Datenvisualisierung",
+        "1": "Leistungs-Dashboards",
+        "2": "Marktanalyse",
+        "3": "Berichtsautomatisierung"
+      },
+      "benefits": {
+        "0": "Verbesserte Entscheidungsfindung",
+        "1": "Echtzeit-Geschäftseinblicke",
+        "2": "Erhöhte Betriebseffizienz",
+        "3": "Wettbewerbsvorteil auf dem Markt"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Unternehmen zu transformieren?",
+      "description": "Kontaktieren Sie noch heute unser Expertenteam, um zu besprechen, wie unsere Lösungen Ihnen helfen können, Ihre Geschäftsziele zu erreichen.",
+      "benefit1": "Maßgeschneiderte Lösungen für Ihre spezifischen Bedürfnisse",
+      "benefit2": "Expertenberatung und -implementierung",
+      "benefit3": "Kontinuierliche Unterstützung und Optimierung",
+      "button": "Jetzt kontaktieren",
+      "formTitle": "Informationen anfordern",
+      "form": {
+        "name": "Ihr Name",
+        "email": "E-Mail-Adresse",
+        "solution": "Lösung von Interesse",
+        "selectSolution": "Wählen Sie eine Lösung",
+        "message": "Nachricht",
+        "messagePlaceholder": "Erzählen Sie uns von Ihren Projektanforderungen",
+        "submit": "Anfrage senden"
+      }
+    }
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Wir entschuldigen uns für die Unannehmlichkeiten. Ein unerwarteter Fehler ist aufgetreten.",
+    "tryAgain": "Erneut versuchen"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+    "returnHome": "Zurück zur Startseite"
   }
 }
