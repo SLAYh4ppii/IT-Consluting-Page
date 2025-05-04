@@ -5,6 +5,8 @@
     "services": "Services",
     "solutions": "Solutions",
     "contact": "Contact",
+    "partners": "Partners",
+    "clients": "Clients",
     "imprint": "Imprint",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
@@ -20,12 +22,17 @@
     "subtitle": "Your trusted partner in digital transformation.",
     "hero": {
       "title": "Comprehensive IT Services for Your Success",
+      "subtitle": "Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business.",
       "cta": "Get Started",
       "description": ""
     },
     "services": {
       "title": "Our Services",
       "description": "Discover our comprehensive range of IT services designed to empower your business.",
+      "onPremise": {
+        "title": "On-Premise Support",
+        "description": "Complete setup and maintenance of on-site IT infrastructure including PCs, servers, cameras, and software installation."
+      },
       "cloud": {
         "title": "Cloud Solutions",
         "description": "Migration, optimization, and management for AWS, Azure, and Google Cloud. Unlock agility and cost savings."
@@ -37,6 +44,14 @@
       "strategy": {
         "title": "IT Strategy & Advisory",
         "description": "Align your technology with business goals. From digital transformation to roadmap planning."
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Expert guidance and support for all your IT needs, from infrastructure planning to technology implementation."
+      },
+      "webAdmin": {
+        "title": "Web Administration",
+        "description": "Professional setup and management of web services, Microsoft 365, and online business tools."
       }
     }
   },
@@ -863,18 +878,14 @@
       "contact": "Contact"
     },
     "serviceLinks": {
-      "cloud": "Cloud Solutions",
-      "software": "Software Development",
-      "strategy": "IT Strategy",
-      "security": "Cybersecurity",
-      "data": "Data Management",
-      "ai": "AI & Machine Learning"
+      "onpremise": "On-Premise Solutions",
+      "microsoft365": "Microsoft 365",
+      "webhosting": "Web Hosting",
+      "consulting": "IT Consulting"
     },
     "solutionLinks": {
-      "transformation": "Digital Transformation",
       "infrastructure": "IT Infrastructure",
-      "managed": "Managed Services",
-      "continuity": "Business Continuity"
+      "managed": "Managed Services"
     },
     "resourceLinks": {
       "caseStudies": "Case Studies",
@@ -904,28 +915,21 @@
       "button": "Subscribe",
       "privacy": "We respect your privacy. Unsubscribe at any time."
     },
-    "contact": {
-      "title": "Contact Information",
-      "address": "123 Tech Street, Silicon Valley, CA 94043",
-      "phone": "+1 (555) 123-4567",
-      "email": "info@techconsult.com"
-    },
-    "copyright": " 2023 TechConsult. All rights reserved.",
-    "certifications": {
-      "gdpr": "GDPR Compliant",
-      "award": "Award Winning Service",
-      "microsoft": "Microsoft Gold Partner",
-      "iso": "ISO 27001 Certified"
-    },
     "contactInfo": {
       "email": "info@techconsult.com",
       "hours": "Mon-Fri: 9am-6pm CET",
       "address": "123 Tech Street, Silicon Valley, CA 94043",
       "phone": "+1 (555) 123-4567"
     },
+    "copyright": "© 2023 TechConsult. All rights reserved.",
+    "certifications": {
+      "gdpr": "GDPR Compliant",
+      "microsoft": "Microsoft Partner",
+      "iso": "ISO 27001 Certified"
+    },
     "quickLinks": {
-      "partner": "Partner Portal",
-      "client": "Client Login",
+      "partner": "Partners",
+      "client": "Clients",
       "sitemap": "Sitemap"
     }
   }

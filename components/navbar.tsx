@@ -58,6 +58,8 @@ export default function Navbar() {
       hasDropdown: true,
       isSolutions: true
     },
+    { name: t('partners'), href: `/${locale}/partners` },
+    { name: t('clients'), href: `/${locale}/clients` },
     { name: t('contact'), href: `/${locale}/contact` },
   ];
   

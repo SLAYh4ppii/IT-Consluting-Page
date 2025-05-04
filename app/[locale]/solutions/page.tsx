@@ -33,18 +33,6 @@ export default function Solutions() {
   // Solutions data
   const solutions = [
     {
-      id: 'cloud',
-      icon: Cloud,
-      title: t('cloud.title', { fallback: 'Cloud Transformation' }),
-      description: t('cloud.description', { fallback: 'Migrate and optimize your infrastructure with our comprehensive cloud solutions.' }),
-      features: [
-        t('cloud.features.0', { fallback: 'Cloud Migration & Strategy' }),
-        t('cloud.features.1', { fallback: 'Multi-Cloud Management' }),
-        t('cloud.features.2', { fallback: 'Cloud Cost Optimization' }),
-        t('cloud.features.3', { fallback: 'Cloud Security & Compliance' })
-      ]
-    },
-    {
       id: 'data',
       icon: Database,
       title: t('data.title', { fallback: 'Data & Analytics' }),
@@ -165,7 +153,7 @@ export default function Solutions() {
             </div>
           </div>
 
-          <Tabs defaultValue="cloud" className="w-full max-w-5xl mx-auto">
+          <Tabs defaultValue="data" className="w-full max-w-5xl mx-auto">
             <TabsList className="grid grid-cols-3 md:grid-cols-6 mb-12">
               {solutions.map((solution) => (
                 <TabsTrigger key={solution.id} value={solution.id} className="flex flex-col items-center gap-2 py-3 px-4">

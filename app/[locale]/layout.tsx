@@ -24,26 +24,34 @@ export default async function LocaleLayout({
 
   // DEBUG: Log locale to server console
   console.log('[locale]/layout.tsx loaded with locale:', locale);
-  console.log('Loading messages for locale:', locale);
+  console.log('Attempting to load messages for locale:', locale);
 
   let messages;
   try {
     // Only attempt to load valid locale files (en.json or de.json)
     if (locale === 'en' || locale === 'de') {
       messages = (await import(`../../messages/${locale}.json`)).default;
-      console.log('Translation keys loaded:', Object.keys(messages));
+      console.log('Loaded keys:', messages ? Object.keys(messages).length : 0, 'for locale:', locale);
       
       // Verify if the services namespace exists
-      if (!messages.services) {
-        console.error('Services translations missing for locale:', locale);
+      if (!messages || !messages.services) { 
+        console.error('Services translations missing or messages failed to load for locale:', locale);
+        // Decide if notFound() is appropriate here or if fallback is okay
       }
     } else {
-      console.error('Unsupported locale:', locale);
+      console.error('Unsupported locale in layout:', locale);
       notFound();
     }
   } catch (error) {
-    console.error('Error loading translations:', error);
-    notFound();
+    console.error(`Error loading translations for locale ${locale}:`, error);
+    // Consider if notFound() is always the right action on error
+    notFound(); 
+  }
+
+  // Ensure messages is at least an empty object if loading failed but we didn't call notFound()
+  if (!messages) {
+    console.warn(`Messages object is undefined for locale ${locale} before Provider. Using empty object.`);
+    messages = {};
   }
 
   return (

@@ -89,8 +89,8 @@ export default function Cybersecurity() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-70"></div>
         </div>
         
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl text-center mx-auto">
             <motion.div
               initial="hidden"
               animate="visible"
@@ -102,7 +102,7 @@ export default function Cybersecurity() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                {t.raw('cybersecurity.hero.title') || 'Protect Your Business from Cyber Threats'}
+                Security Services
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl">

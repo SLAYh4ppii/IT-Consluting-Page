@@ -5,6 +5,8 @@
     "services": "Dienstleistungen",
     "solutions": "Lösungen",
     "contact": "Kontakt",
+    "partners": "Partner",
+    "clients": "Kunden",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen"
@@ -14,6 +16,30 @@
     "light": "Hell",
     "dark": "Dunkel",
     "system": "System"
+  },
+  "about": {
+    "title": "Über TechConsult",
+    "subtitle": "Führend in der digitalen Transformation in Österreich und darüber hinaus seit 2010.",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "TechConsult wurde 2010 gegründet und hat sich von einer kleinen IT-Beratungsfirma zu einem führenden Partner für digitale Transformation in Österreich entwickelt. Unsere Reise ist geprägt von kontinuierlicher Innovation und einem Engagement für Exzellenz.",
+      "paragraph2": "Heute helfen wir Organisationen in ganz Europa, die Komplexität moderner Technologie zu bewältigen und erfolgreiche digitale Transformationen voranzutreiben."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "clientCentric": {
+        "title": "Kundenorientiert",
+        "description": "Wir stellen unsere Kunden in den Mittelpunkt all unserer Aktivitäten und konzentrieren uns darauf, Lösungen zu liefern, die ihre einzigartigen Herausforderungen adressieren."
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir streben nach Exzellenz in allen Aspekten unserer Arbeit, von der technischen Implementierung bis zur Kommunikation mit dem Kunden."
+      },
+      "integrity": {
+        "title": "Integrität",
+        "description": "Wir arbeiten mit Ehrlichkeit, Transparenz und ethischen Standards in allen unseren Geschäftsbeziehungen."
+      }
+    }
   },
   "home": {
     "welcome": "Willkommen bei TechConsult",
@@ -27,6 +53,10 @@
     "services": {
       "title": "Unsere Dienstleistungen",
       "description": "Entdecken Sie unser umfassendes Angebot an IT-Dienstleistungen zur Stärkung Ihres Unternehmens.",
+      "onPremise": {
+        "title": "Vor-Ort-Support",
+        "description": "Vollständige Einrichtung und Wartung der IT-Infrastruktur vor Ort, einschließlich PCs, Server, Kameras und Softwareinstallation."
+      },
       "cloud": {
         "title": "Cloud-Lösungen",
         "description": "Migration, Optimierung und Verwaltung für AWS, Azure und Google Cloud. Erreichen Sie mehr Agilität und Kosteneinsparungen."
@@ -38,6 +68,14 @@
       "strategy": {
         "title": "IT-Strategie & Beratung",
         "description": "Richten Sie Ihre Technologie an Ihren Geschäftszielen aus – von digitaler Transformation bis zur Strategieplanung."
+      },
+      "consulting": {
+        "title": "IT-Beratung",
+        "description": "Fachkundige Beratung und Unterstützung für alle Ihre IT-Bedürfnisse, von der Infrastrukturplanung bis zur Technologieimplementierung."
+      },
+      "webAdmin": {
+        "title": "Web-Administration",
+        "description": "Professionelle Einrichtung und Verwaltung von Webdiensten, Microsoft 365 und Online-Geschäftstools."
       }
     }
   },
@@ -49,12 +87,42 @@
     "sectionDescription": "Wir bieten umfassende IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind, mit branchenführender Expertise und persönlichem Service.",
     "text5": "[DE] Empowering businesses with cutting-edge IT services that drive growth and innovation. Our team of experts is dedicated to delivering tailored solutions that address your unique challenges.",
     "text6": "[DE] Partner with us to transform your IT infrastructure and unlock new possibilities for your business. We're committed to your success with reliable, scalable, and secure technology solutions.",
+    "onPremise": {
+      "title": "Vor-Ort-IT-Support",
+      "description": "Installation, Konfiguration und Wartung Ihrer lokalen IT-Infrastruktur.",
+      "features": {
+        "0": "Neue PC- & Server-Einrichtung",
+        "1": "Netzwerkkonfiguration & Fehlerbehebung",
+        "2": "Softwareinstallation & Updates",
+        "3": "Sicherheitskamera-Bereitstellung"
+      }
+    },
+    "webAdmin": {
+      "title": "Microsoft 365 & Web-Administration",
+      "description": "Einrichtung und Verwaltung von Microsoft 365-Diensten und grundlegendem Webhosting.",
+      "features": {
+        "0": "Microsoft 365 Tenant-Einrichtung & Benutzerverwaltung",
+        "1": "E-Mail-Konfiguration & Support",
+        "2": "Grundlegendes Webhosting & Domain-Verwaltung",
+        "3": "Einfache Website-Erstellung & Wartung"
+      }
+    },
+    "consulting": {
+      "title": "IT-Beratung & Strategie",
+      "description": "Expertenberatung zur Ausrichtung Ihrer Technologie an Ihren Geschäftszielen.",
+      "features": {
+        "0": "Technologiebedarfsanalyse",
+        "1": "IT-Budgetplanung",
+        "2": "Lieferantenmanagement",
+        "3": "Allgemeiner IT-Support & Fehlerbehebung"
+      }
+    },
     "hero": {
-      "title": "[DE] Comprehensive IT Services for Your Success",
-      "subtitle": "[DE] Professional IT Services",
-      "description": "[DE] Discover our full range of IT consulting, infrastructure, and digital solutions designed to empower your business.",
-      "cta": "[DE] Explore Services",
-      "secondaryCta": "[DE] Request Consultation"
+      "title": "Umfassende IT-Dienstleistungen für Ihren Erfolg",
+      "subtitle": "Professionelle IT-Dienstleistungen",
+      "description": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens.",
+      "cta": "Dienstleistungen erkunden",
+      "secondaryCta": "Beratung anfragen"
     },
     "cybersecurity": {
       "title": "Cybersicherheit",
@@ -855,21 +923,27 @@
       "description": "Wir entschuldigen uns für die Unannehmlichkeiten. Ein unerwarteter Fehler ist aufgetreten.",
       "tryAgain": "Erneut versuchen",
       "text5": "Unser Team wurde benachrichtigt und arbeitet daran, das Problem so schnell wie möglich zu beheben. Vielen Dank für Ihre Geduld."
-    },
-    "footer": {
+    }
+  },
+  "footer": {
+      "companyInfo": "TechConsult ist ein führendes IT-Beratungsunternehmen, das innovative Technologielösungen für Unternehmen jeder Größe anbietet. Seit mehr als 15 Jahren unterstützen wir Kunden bei der digitalen Transformation.",
+      "certification": "ISO 27001 & DSGVO zertifiziert",
+      "sections": {
+        "company": "Unternehmen",
+        "services": "Dienstleistungen",
+        "solutions": "Lösungen",
+        "resources": "Ressourcen",
+        "contact": "Kontakt"
+      },
       "serviceLinks": {
-        "cloud": "Cloud-Lösungen",
-        "software": "Softwareentwicklung",
-        "strategy": "IT-Strategie",
-        "security": "Cybersicherheit",
-        "data": "Datenmanagement",
-        "ai": "KI & Maschinelles Lernen"
+        "onpremise": "On-Premise Lösungen",
+        "microsoft365": "Microsoft 365",
+        "webhosting": "Web-Hosting",
+        "consulting": "IT-Beratung"
       },
       "solutionLinks": {
-        "transformation": "Digitale Transformation",
         "infrastructure": "IT-Infrastruktur",
-        "managed": "Managed Services",
-        "continuity": "Geschäftskontinuität"
+        "managed": "Managed Services"
       },
       "resourceLinks": {
         "caseStudies": "Fallstudien",
@@ -899,39 +973,22 @@
         "button": "Abonnieren",
         "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abbestellbar."
       },
-      "contact": {
-        "title": "Kontaktinformationen",
-        "address": "123 Tech Straße, Silicon Valley, CA 94043",
-        "phone": "+1 (555) 123-4567",
-        "email": "info@techconsult.com"
-      },
-      "copyright": " 2023 TechConsult GmbH. Alle Rechte vorbehalten.",
-      "companyInfo": "TechConsult ist ein führendes IT-Beratungsunternehmen, das innovative Technologielösungen für Unternehmen jeder Größe anbietet. Seit mehr als 15 Jahren unterstützen wir Kunden bei der digitalen Transformation.",
-      "certification": "ISO 27001 & DSGVO zertifiziert",
-      "certifications": {
-        "gdpr": "DSGVO-konform",
-        "award": "Preisgekrönter Service",
-        "microsoft": "Microsoft Gold Partner",
-        "iso": "ISO 27001 zertifiziert"
-      },
       "contactInfo": {
         "email": "info@techconsult.com",
         "hours": "Mo-Fr: 9-18 Uhr MEZ",
         "address": "Musterstraße 123, 10115 Berlin, Deutschland",
         "phone": "+49 123 456 789"
       },
-      "sections": {
-        "company": "Unternehmen",
-        "services": "Dienstleistungen",
-        "solutions": "Lösungen",
-        "resources": "Ressourcen",
-        "contact": "Kontakt"
+      "copyright": "© 2023 TechConsult GmbH. Alle Rechte vorbehalten.",
+      "certifications": {
+        "gdpr": "DSGVO-konform",
+        "microsoft": "Microsoft Partner",
+        "iso": "ISO 27001 zertifiziert"
       },
       "quickLinks": {
-        "partner": "Partner-Portal",
-        "client": "Kunden-Login",
+        "partner": "Partner",
+        "client": "Kunden",
         "sitemap": "Seitenverzeichnis"
       }
     }
-  }
 }

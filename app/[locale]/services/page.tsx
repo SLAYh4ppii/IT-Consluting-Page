@@ -1,6 +1,6 @@
 import * as CardComponents from '../../../components/ui/card';
 import AnimatedSection from './AnimatedSection';
-import { Cloud, Code, LineChart, Database, Shield, Brain } from 'lucide-react';
+import { HardDrive, Server, Network, Camera } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
 import { Button } from '@/components/ui/button';
 
@@ -19,66 +19,46 @@ export default async function Services({ params }: { params: { locale: string } 
   
   // Log the locale and available translation keys for debugging
   console.log(`Services page loaded with locale: ${params.locale}`);
-  
+  console.log(`Services page t function type: ${typeof t}`);
+  try {
+    const testTitle = t('onPremise.title');
+    console.log(`Services page direct lookup for onPremise.title: ${testTitle}`);
+  } catch (error) {
+    console.error(`Services page error during direct lookup: ${error}`);
+  }
+
   const services: Service[] = [
     {
-      icon: Cloud,
-      title: t.raw('cloud.title') || "Cloud Solutions",
-      description: t.raw('cloud.description') || "Scalable cloud infrastructure and migration services for modern businesses.",
+      icon: Server,
+      title: t('onPremise.title') || "On-Premise IT Support",
+      description: t('onPremise.description') || "Installation, configuration, and maintenance of your local IT infrastructure.",
       features: [
-        t.raw('cloud.features.0') || "Cloud Infrastructure",
-        t.raw('cloud.features.1') || "Cloud Migration",
-        t.raw('cloud.features.2') || "Cloud Storage",
+        t('onPremise.features.0') || "New PC & Server Setup",
+        t('onPremise.features.1') || "Network Configuration & Troubleshooting",
+        t('onPremise.features.2') || "Software Installation & Updates",
+        t('onPremise.features.3') || "Security Camera Deployment",
       ],
     },
     {
-      icon: Code,
-      title: t.raw('development.title') || "Custom Software Development",
-      description: t.raw('development.description') || "Modern web, mobile, and API solutions tailored to your business needs.",
+      icon: HardDrive,
+      title: t('webAdmin.title') || "Microsoft 365 & Web Administration",
+      description: t('webAdmin.description') || "Setup and management of Microsoft 365 services and basic web hosting.",
       features: [
-        t.raw('development.features.0') || "Web Applications",
-        t.raw('development.features.1') || "Mobile Applications",
-        t.raw('development.features.2') || "API Development",
+        t('webAdmin.features.0') || "Microsoft 365 Tenant Setup & User Management",
+        t('webAdmin.features.1') || "Email Configuration & Support",
+        t('webAdmin.features.2') || "Basic Web Hosting & Domain Management",
+        t('webAdmin.features.3') || "Simple Website Creation & Maintenance",
       ],
     },
     {
-      icon: LineChart,
-      title: t.raw('strategy.title') || "IT Strategy & Advisory",
-      description: t.raw('strategy.description') || "Align your technology with business goals. From digital transformation to roadmap planning.",
+      icon: Network,
+      title: t('consulting.title') || "IT Consulting & Strategy",
+      description: t('consulting.description') || "Expert advice to align your technology with your business objectives.",
       features: [
-        t.raw('strategy.features.0') || "Digital Transformation",
-        t.raw('strategy.features.1') || "IT Roadmap Planning",
-        t.raw('strategy.features.2') || "Technology Assessment",
-      ],
-    },
-    {
-      icon: Database,
-      title: t.raw('datamanagement.title') || "Data Management",
-      description: t.raw('datamanagement.description') || "Comprehensive data management solutions to organize, protect, and leverage your business data effectively.",
-      features: [
-        t.raw('datamanagement.features.0') || "Data Governance",
-        t.raw('datamanagement.features.1') || "Data Integration",
-        t.raw('datamanagement.features.2') || "Data Analytics",
-      ],
-    },
-    {
-      icon: Shield,
-      title: t.raw('cybersecurity.title') || "Cybersecurity",
-      description: t.raw('cybersecurity.description') || "Protect your business with comprehensive security solutions and best practices.",
-      features: [
-        t.raw('cybersecurity.features.0') || "Security Audits",
-        t.raw('cybersecurity.features.1') || "Threat Protection",
-        t.raw('cybersecurity.features.2') || "Compliance Solutions",
-      ],
-    },
-    {
-      icon: Brain,
-      title: t.raw('ai.title') || "AI & Machine Learning",
-      description: t.raw('ai.description') || "Leverage the power of AI to automate processes and gain competitive advantage.",
-      features: [
-        t.raw('ai.features.0') || "AI Integration",
-        t.raw('ai.features.1') || "Machine Learning Models",
-        t.raw('ai.features.2') || "Predictive Analytics",
+        t('consulting.features.0') || "Technology Needs Assessment",
+        t('consulting.features.1') || "IT Budget Planning",
+        t('consulting.features.2') || "Vendor Management",
+        t('consulting.features.3') || "General IT Support & Troubleshooting",
       ],
     },
   ];
@@ -101,26 +81,26 @@ export default async function Services({ params }: { params: { locale: string } 
             <div>
               <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                {t.raw('hero.subtitle') || 'Professional IT Services'}
+                {t('hero.subtitle') || 'Professional IT Services'}
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <span className="relative inline-block">
-                  <span className="relative z-10">{t.raw('hero.title') || 'Our Services'}</span>
+                  <span className="relative z-10">{t('hero.title') || 'Our Services'}</span>
                   <span className="absolute bottom-0 left-0 w-full h-3 bg-primary/20 -z-10 transform -rotate-1"></span>
                 </span>
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-                {t.raw('hero.description') || 'Discover our comprehensive range of IT services designed to empower your business.'}
+                {t('hero.description') || 'Discover our comprehensive range of IT services designed to empower your business.'}
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="px-8 py-6 text-base font-medium bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm">
-                  {t('hero.cta')}
+                  {t('hero.cta') || '[Default] Explore Services'}
                 </Button>
                 <Button size="lg" variant="outline" className="px-8 py-6 text-base font-medium border-primary/20 hover:bg-primary/5">
-                  {t('hero.secondaryCta', { fallback: 'Learn More' })}
+                  {t('hero.secondaryCta') || '[Default] Learn More'}
                 </Button>
               </div>
               
@@ -275,7 +255,7 @@ export default async function Services({ params }: { params: { locale: string } 
             <div className="w-32 h-16 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center">
               <svg className="h-7 w-auto" viewBox="0 0 127 39" xmlns="http://www.w3.org/2000/svg">
                 <path className="fill-foreground" d="M76.266 26.65c-5.354 3.936-13.137 6.037-19.832 6.037-9.38 0-17.818-3.459-24.205-9.221-.502-.455-.053-1.077.55-.726 6.905 4.015 15.447 6.436 24.269 6.436 5.947 0 12.487-1.23 18.5-3.79.906-.384 1.666.593.718 1.264zm2.246-2.556c-.682-.874-4.529-.414-6.26-.207-.526.063-.607-.394-.133-.727 3.066-2.156 8.091-1.533 8.672-.81.582.726-.152 5.772-3.033 8.178-.442.373-.863.174-.666-.316.646-1.61 2.09-5.215 1.42-6.118z"/>
-                <path className="fill-foreground" d="M71.831 3.842V1.254c0-.38.288-.63.63-.63h11.184c.358 0 .645.256.645.63v2.22c-.004.358-.307.825-.843 1.564l-5.795 8.275c2.154-.05 4.432.27 6.357 1.366.433.249.55.618.583.98v2.77c0 .366-.404.793-.828.572-3.461-1.813-8.055-2.01-11.888.021-.39.205-.798-.211-.798-.577v-2.63c0-.407.006-.1.39-1.582l6.72-9.63H72.47c-.358 0-.645-.255-.64-.635zm-50.784 17.6h-3.397c-.323-.022-.582-.266-.605-.576V1.254c0-.349.293-.63.655-.63h3.166c.331.015.596.27.618.585v2.588h.063c.825-2.198 2.378-3.219 4.47-3.219 2.123 0 3.454 1.021 4.406 3.219.825-2.198 2.7-3.219 4.707-3.219 1.428 0 2.984.588 3.936 1.91 1.079 1.469.858 3.602.858 5.473l-.005 11.025c0 .349-.293.63-.655.63h-3.392c-.34-.022-.612-.292-.612-.63V9.604c-1.32 1.683-3.063 2.475-5.38 2.475-4.752 0-7.508-3.668-7.508-8.845 0-4.61 2.5-9.22 7.64-9.22 2.134 0 4.026.825 5.248 2.75V1.254c0-.349.297-.63.66-.63h3.426c.33.015.6.27.623.585v17.958h-.016zm-41.812 0c0 .297-.008.66-.14.99-.099.264-.264.429-.462.44h-3.063c-.305-.022-.561-.247-.594-.55V1.254c0-.349.297-.63.66-.63h3.426c.33.015.6.27.623.585v17.958h-.016z"/>
+                <path className="fill-foreground" d="M71.831 3.842V1.254c0-.38.288-.63.63-.63h11.184c.358 0 .645.256.645.63v2.22c-.004.358-.307.825-.843 1.564l-5.795 8.275c2.154-.05 4.432.27 6.357 1.366.433.249.55.618.583.98v2.77c0 .366-.404.793-.828.572-3.461-1.813-8.055-2.01-11.888.021-.39.205-.798-.211-.798-.577v-2.63c0-.407.006-.1.39-1.582l6.72-9.63H72.47c-.358 0-.645-.255-.64-.635zm-50.784 17.6h-3.397c-.323-.022-.582-.266-.605-.576V1.254c0-.349.293-.63.655-.63h3.166c.331.015.596.27.618.585v2.588h.063c.825-2.198 2.378-3.219 4.47-3.219 2.123 0 3.454 1.021 4.406 3.219.825-2.198 2.7-3.219 4.707-3.219 1.428 0 2.984.588 3.936 1.91 1.079 1.469.858 3.602.858 5.473l-.005 11.025c0 .349-.293.63-.655.63h-3.392c-.34-.022-.612-.292-.612-.63V9.604c-1.32 1.683-3.063 2.475-5.38 2.475-4.752 0-7.508-3.668-7.508-8.845 0-4.61 2.5-9.22 7.64-9.22 2.134 0 4.026.825 5.248 2.75V1.254c0-.349.297-.63.66-.63h3.458c.33.015.594.27.617.585v17.958h-.016zm-41.812 0c0 .297-.008.66-.14.99-.099.264-.264.429-.462.44h-3.063c-.305-.022-.561-.247-.594-.55V1.254c0-.349.297-.63.66-.63h3.426c.33.015.6.27.623.585v17.958h-.016z"/>
               </svg>
               <span className="sr-only">Amazon</span>
             </div>
@@ -295,7 +275,7 @@ export default async function Services({ params }: { params: { locale: string } 
             {/* IBM */}
             <div className="w-32 h-16 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center">
               <svg className="h-12 w-auto" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
-                <path className="fill-foreground" d="M0 0v10.1h57.6V0H0zm71.5 0v10.1h57.3c0-3.4-2.7-6.7-6.1-8.4-1.6-.8-3.4-1.7-5.1-1.7H71.5zM143 0v10.1h45.4c-.5-5.6-4.7-10.1-10.2-10.1H143zm-71.5 20.1v10.1h57.6V20.1H71.5zm71.5 0v10.1h53c.5-5.3-2.5-7.5-5.8-10.1h-47.2zm-143 0v10.1h57.6V20.1H0zm0 20.2v10.1h57.6V40.3H0zm71.5 0v10.1h123c2.8-2.2 5.8-6.4 5.8-10.1H71.5zm71.5 0v10.1h35.2c5.6 0 9.7-4.6 10.2-10.1H143zm-71.5 20.2v10.1h57.6v-10.1H71.5zm-71.5 0v10.1h57.6v-10.1H0zm143 0v10.1h47.2c1.8 0 3.5-.9 5.1-1.7 3.4-1.7 6.1-5 6.1-8.4H143z"/>
+                <path className="fill-foreground" d="M0 0v10.1h57.6V0H0zm71.5 0v10.1h57.3c0-3.4-2.7-6.7-6.1-8.4-1.6-.8-3.4-1.7-5.1-1.7H71.5zM143 0v10.1h45.4c-.5-5.6-4.7-10.1-10.2-10.1H143zm-71.5 20.1v10.1h57.6V20.1H71.5zm71.5 0v10.1h53c.5-5.3-2.5-7.5-5.8-10.1h-47.2zm-143 0v10.1h57.6V20.1H0zm0 20.2v10.1h57.6v-10.1H0zm71.5 0v10.1h123c2.8-2.2 5.8-6.4 5.8-10.1H71.5zm71.5 0v10.1h35.2c5.6 0 9.7-4.6 10.2-10.1H143zm-71.5 20.2v10.1h57.6v-10.1H71.5zm-71.5 0v10.1h57.6v-10.1H0zm143 0v10.1h47.2c1.8 0 3.5-.9 5.1-1.7 3.4-1.7 6.1-5 6.1-8.4H143z"/>
               </svg>
               <span className="sr-only">IBM</span>
             </div>
@@ -303,7 +283,7 @@ export default async function Services({ params }: { params: { locale: string } 
             {/* Oracle */}
             <div className="w-32 h-16 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center">
               <svg className="h-6 w-auto" viewBox="0 0 248 31" xmlns="http://www.w3.org/2000/svg">
-                <path className="fill-foreground" d="M0 30.6h29.3c16.2 0 29.3-6.8 29.3-15.3C58.7 6.8 45.5 0 29.3 0H0v30.6zm21.5-7.1h-7.9V7.1h7.9c8.2 0 14.9 3.7 14.9 8.2 0 4.5-6.7 8.2-14.9 8.2zm66.4 7.1h13.6V7.1h-13.6v23.5zm61.5 0h13.6V7.1h-13.6v23.5zm-30.7 0h13.6V7.1h-13.6v23.5zm-31.9 0h13.6V18.9h16.9v-8.4h-16.9V7.1h18.2V0H86.8v30.6zm158.7-8.1c-3.2 0-5.9-2.6-5.9-5.9 0-3.2 2.6-5.9 5.9-5.9 3.2 0 5.9 2.6 5.9 5.9 0 3.3-2.6 5.9-5.9 5.9zm0-13c-3.9 0-7.1 3.2-7.1 7.1 0 3.9 3.2 7.1 7.1 7.1 3.9 0 7.1-3.2 7.1-7.1 0-3.9-3.2-7.1-7.1-7.1zm-30.9 21.1h13.6V0h-13.6v30.6zm3.426 8.274c0 .297-.008.66-.14.99-.099.264-.264.429-.462.44h-3.063c-.305-.022-.561-.247-.594-.55V18.4c-1.32 1.683-3.063 2.475-5.38 2.475-4.752 0-7.508-3.668-7.508-8.845 0-4.61 2.5-9.22 7.64-9.22 2.134 0 4.026.825 5.248 2.75V1.254c0-.349.297-.63.66-.63h3.458c.33.015.594.27.617.585v17.958h-.016zm-41.812 0c0 .297-.008.66-.14.99-.099.264-.264.429-.462.44h-3.063c-.305-.022-.561-.247-.594-.55V1.254c0-.349.297-.63.66-.63h3.426c.33.015.6.27.623.585v17.958h-.016z"/>
+                <path className="fill-foreground" d="M0 30.6h29.3c16.2 0 29.3-6.8 29.3-15.3C58.7 6.8 45.5 0 29.3 0H0v30.6zm21.5-7.1h-7.9V7.1h7.9c8.2 0 14.9 3.7 14.9 8.2 0 4.5-6.7 8.2-14.9 8.2zm66.4 7.1h13.6V7.1h-13.6v23.5zm61.5 0h13.6V7.1h-13.6v23.5zm-30.7 0h13.6V18.9h16.9v-8.4h-16.9V7.1h18.2V0H86.8v30.6zm158.7-8.1c-3.2 0-5.9-2.6-5.9-5.9 0-3.2 2.6-5.9 5.9-5.9 3.2 0 5.9 2.6 5.9 5.9 0 3.3-2.6 5.9-5.9 5.9zm0-13c-3.9 0-7.1 3.2-7.1 7.1 0 3.9 3.2 7.1 7.1 7.1 3.9 0 7.1-3.2 7.1-7.1 0-3.9-3.2-7.1-7.1-7.1zm-30.9 21.1h13.6V0h-13.6v30.6zm3.426 8.274c0 .297-.008.66-.14.99-.099.264-.264.429-.462.44h-3.063c-.305-.022-.561-.247-.594-.55V18.4c-1.32 1.683-3.063 2.475-5.38 2.475-4.752 0-7.508-3.668-7.508-8.845 0-4.61 2.5-9.22 7.64-9.22 2.134 0 4.026.825 5.248 2.75V1.254c0-.349.297-.63.66-.63h3.458c.33.015.594.27.617.585v17.958h-.016zm-41.812 0c0 .297-.008.66-.14.99-.099.264-.264.429-.462.44h-3.063c-.305-.022-.561-.247-.594-.55V1.254c0-.349.297-.63.66-.63h3.426c.33.015.6.27.623.585v17.958h-.016z"/>
               </svg>
               <span className="sr-only">Oracle</span>
             </div>
@@ -354,12 +334,9 @@ export default async function Services({ params }: { params: { locale: string } 
             {services.map((service, idx) => {
               const Icon = service.icon;
               // Create an ID based on the service type
-              const serviceId = service.title === t('cloud.title') ? 'cloud' :
-                               service.title === t('development.title') ? 'development' :
-                               service.title === t('cybersecurity.title') ? 'security' :
-                               service.title === t('infrastructure.title') ? 'data' :
-                               service.title === t('strategy.title') ? 'strategy' :
-                               service.title === t('ai.title') ? 'ai' : `service-${idx}`;
+              const serviceId = service.title === t('onPremise.title') ? 'onPremise' :
+                               service.title === t('webAdmin.title') ? 'webAdmin' :
+                               service.title === t('consulting.title') ? 'consulting' : `service-${idx}`;
               
               return (
                 <AnimatedSection key={idx} delay={idx * 0.1} id={serviceId}>

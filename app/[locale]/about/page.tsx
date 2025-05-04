@@ -2,8 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Users, Target, Heart } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function About() {
+  const t = useTranslations('about');
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -15,9 +17,9 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold mb-6">About TechConsult</h1>
+            <h1 className="text-4xl font-bold mb-6">{t('title', { fallback: 'About TechConsult' })}</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Leading digital transformation in Austria and beyond since 2010.
+              {t('subtitle', { fallback: 'Leading digital transformation in Austria and beyond since 2010.' })}
             </p>
           </motion.div>
         </div>
@@ -33,12 +35,12 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('story.title', { fallback: 'Our Story' })}</h2>
               <p className="text-muted-foreground mb-4">
-                Founded in 2010, TechConsult has grown from a small IT consultancy to a leading digital transformation partner in Austria. Our journey has been marked by continuous innovation and a commitment to excellence.
+                {t('story.paragraph1', { fallback: 'Founded in 2010, TechConsult has grown from a small IT consultancy to a leading digital transformation partner in Austria. Our journey has been marked by continuous innovation and a commitment to excellence.' })}
               </p>
               <p className="text-muted-foreground">
-                Today, we help organizations across Europe navigate the complexities of modern technology and drive successful digital transformations.
+                {t('story.paragraph2', { fallback: 'Today, we help organizations across Europe navigate the complexities of modern technology and drive successful digital transformations.' })}
               </p>
             </motion.div>
             <motion.div
@@ -67,9 +69,9 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold">Our Values</h2>
+            <h2 className="text-3xl font-bold mb-6">{t('values.title', { fallback: 'Our Values' })}</h2>
           </motion.div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -78,10 +80,8 @@ export default function About() {
               className="text-center"
             >
               <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
-              <p className="text-muted-foreground">
-                We believe in the power of teamwork and partnership with our clients.
-              </p>
+              <h3 className="text-xl font-semibold mb-2">{t('values.clientCentric.title', { fallback: 'Client-Centric' })}</h3>
+              <p className="text-muted-foreground">{t('values.clientCentric.description', { fallback: 'We put our clients at the center of everything we do, focusing on delivering solutions that address their unique challenges.' })}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -91,10 +91,8 @@ export default function About() {
               className="text-center"
             >
               <Target className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Excellence</h3>
-              <p className="text-muted-foreground">
-                We strive for excellence in everything we do.
-              </p>
+              <h3 className="text-xl font-semibold mb-2">{t('values.excellence.title', { fallback: 'Excellence' })}</h3>
+              <p className="text-muted-foreground">{t('values.excellence.description', { fallback: 'We strive for excellence in all aspects of our work, from technical implementation to client communication.' })}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -104,10 +102,8 @@ export default function About() {
               className="text-center"
             >
               <Heart className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Passion</h3>
-              <p className="text-muted-foreground">
-                We are passionate about technology and its potential to transform businesses.
-              </p>
+              <h3 className="text-xl font-semibold mb-2">{t('values.integrity.title', { fallback: 'Integrity' })}</h3>
+              <p className="text-muted-foreground">{t('values.integrity.description', { fallback: 'We operate with honesty, transparency, and ethical standards in all our business relationships.' })}</p>
             </motion.div>
           </div>
         </div>
