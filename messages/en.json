@@ -17,6 +17,41 @@
     "dark": "Dark",
     "system": "System"
   },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your Trusted IT Partner",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We provide reliable, practical IT solutions focused on your business needs. Our goal is to deliver technology that works for you, not the other way around."
+    },
+    "values": {
+      "title": "Our Values",
+      "reliability": {
+        "title": "Reliability",
+        "description": "We deliver consistent, dependable service you can count on."
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Our team brings years of practical experience to every project."
+      },
+      "simplicity": {
+        "title": "Simplicity",
+        "description": "We believe in straightforward solutions that solve real problems."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "We work alongside you as a true extension of your team."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the experts behind our IT solutions."
+    },
+    "history": {
+      "title": "Our History",
+      "description": "Founded in 2010, TechConsult has grown from a small IT support company to a comprehensive IT service provider, focusing on practical solutions for businesses of all sizes."
+    }
+  },
   "home": {
     "welcome": "Welcome to TechConsult",
     "subtitle": "Your trusted partner in digital transformation.",

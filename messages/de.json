@@ -17,33 +17,45 @@
     "dark": "Dunkel",
     "system": "System"
   },
+
   "about": {
-    "title": "Über TechConsult",
-    "subtitle": "Führend in der digitalen Transformation in Österreich und darüber hinaus seit 2010.",
-    "story": {
-      "title": "Unsere Geschichte",
-      "paragraph1": "TechConsult wurde 2010 gegründet und hat sich von einer kleinen IT-Beratungsfirma zu einem führenden Partner für digitale Transformation in Österreich entwickelt. Unsere Reise ist geprägt von kontinuierlicher Innovation und einem Engagement für Exzellenz.",
-      "paragraph2": "Heute helfen wir Organisationen in ganz Europa, die Komplexität moderner Technologie zu bewältigen und erfolgreiche digitale Transformationen voranzutreiben."
+    "title": "Über uns",
+    "subtitle": "Ihr zuverlässiger IT-Partner",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Wir bieten zuverlässige, praktische IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind. Unser Ziel ist es, Technologie zu liefern, die für Sie arbeitet, nicht umgekehrt."
     },
     "values": {
       "title": "Unsere Werte",
-      "clientCentric": {
-        "title": "Kundenorientiert",
-        "description": "Wir stellen unsere Kunden in den Mittelpunkt all unserer Aktivitäten und konzentrieren uns darauf, Lösungen zu liefern, die ihre einzigartigen Herausforderungen adressieren."
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Wir bieten konsistenten, verlässlichen Service, auf den Sie zählen können."
       },
-      "excellence": {
-        "title": "Exzellenz",
-        "description": "Wir streben nach Exzellenz in allen Aspekten unserer Arbeit, von der technischen Implementierung bis zur Kommunikation mit dem Kunden."
+      "expertise": {
+        "title": "Fachkompetenz",
+        "description": "Unser Team bringt jahrelange praktische Erfahrung in jedes Projekt ein."
       },
-      "integrity": {
-        "title": "Integrität",
-        "description": "Wir arbeiten mit Ehrlichkeit, Transparenz und ethischen Standards in allen unseren Geschäftsbeziehungen."
+      "simplicity": {
+        "title": "Einfachheit",
+        "description": "Wir glauben an unkomplizierte Lösungen, die echte Probleme lösen."
+      },
+      "partnership": {
+        "title": "Partnerschaft",
+        "description": "Wir arbeiten mit Ihnen als echte Erweiterung Ihres Teams zusammen."
       }
+    },
+    "team": {
+      "title": "Unser Team",
+      "description": "Lernen Sie die Experten hinter unseren IT-Lösungen kennen."
+    },
+    "history": {
+      "title": "Unsere Geschichte",
+      "description": "TechConsult wurde 2010 gegründet und hat sich von einem kleinen IT-Support-Unternehmen zu einem umfassenden IT-Dienstleister entwickelt, der sich auf praktische Lösungen für Unternehmen jeder Größe konzentriert."
     }
   },
   "home": {
     "welcome": "Willkommen bei TechConsult",
-    "subtitle": "Ihr vertrauenswürdiger Partner für digitale Transformation.",
+    "subtitle": "Ihr vertrauenswürdiger Partner bei der digitalen Transformation.",
     "hero": {
       "title": "Umfassende IT-Dienstleistungen für Ihren Erfolg",
       "subtitle": "Entdecken Sie unser vollständiges Angebot an IT-Beratung, Infrastruktur und digitalen Lösungen zur Stärkung Ihres Unternehmens.",

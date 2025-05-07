@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ThemeToggle } from './theme-toggle';
 import { Button } from './ui/button';
-import { Monitor, Menu, X, ChevronDown, Phone, Mail, Clock, User, Shield, Database, Code, LineChart, ExternalLink, Cloud } from 'lucide-react';
+import { Monitor, Menu, X, ChevronDown, Phone, Mail, Clock, User, Shield, Database, Code, LineChart, ExternalLink, Cloud, Globe } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -15,9 +15,7 @@ export default function Navbar() {
   const locale = pathname.split('/')[1];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
-  const servicesRef = useRef<HTMLDivElement>(null);
   const solutionsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -26,9 +24,6 @@ export default function Navbar() {
     };
     
     const handleClickOutside = (event: MouseEvent) => {
-      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
-        setServicesOpen(false);
-      }
       if (solutionsRef.current && !solutionsRef.current.contains(event.target as Node)) {
         setSolutionsOpen(false);
       }
@@ -47,13 +42,7 @@ export default function Navbar() {
     { name: t('home'), href: `/${locale}` },
     { name: t('about'), href: `/${locale}/about` },
     { 
-      name: t('services'), 
-      href: `/${locale}/services`,
-      hasDropdown: true,
-      isServices: true
-    },
-    { 
-      name: t('solutions'), 
+      name: 'Solutions', 
       href: `/${locale}/solutions`,
       hasDropdown: true,
       isSolutions: true
@@ -63,18 +52,11 @@ export default function Navbar() {
     { name: t('contact'), href: `/${locale}/contact` },
   ];
   
-  const serviceItems = [
-    { icon: Cloud, name: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services', href: `/${locale}/services/cloud` },
-    { icon: Code, name: 'Software Development', description: 'Custom software solutions for your business needs', href: `/${locale}/services/software-development` },
-    { icon: Database, name: 'Data Management', description: 'Enterprise data solutions and analytics', href: `/${locale}/services/data-management` },
-    { icon: Shield, name: 'Cybersecurity', description: 'Protect your business with advanced security', href: `/${locale}/services/security` },
-  ];
-  
   const solutionItems = [
-    { icon: LineChart, name: 'Digital Transformation', description: 'Comprehensive digital strategy and execution', href: `/${locale}/solutions/transformation` },
-    { icon: Monitor, name: 'IT Infrastructure', description: 'Reliable and scalable IT infrastructure solutions', href: `/${locale}/solutions/infrastructure` },
-    { icon: User, name: 'Managed Services', description: '24/7 support and maintenance for your systems', href: `/${locale}/solutions/managed` },
-    { icon: Clock, name: 'Business Continuity', description: 'Disaster recovery and business continuity planning', href: `/${locale}/solutions/continuity` },
+    { icon: Monitor, name: 'On-Premise Solutions', description: 'Hardware, PCs, servers, cameras, and software installation', href: `/${locale}/solutions/on-premise` },
+    { icon: Cloud, name: 'Microsoft 365', description: 'Setup and administration of Microsoft 365 services', href: `/${locale}/solutions/microsoft-365` },
+    { icon: Globe, name: 'Web Hosting', description: 'Basic web hosting and website creation services', href: `/${locale}/solutions/web-hosting` },
+    { icon: User, name: 'IT Consulting', description: 'General IT consulting and support services', href: `/${locale}/solutions/consulting` },
   ];
   
   const isActive = (href: string) => {
@@ -83,14 +65,8 @@ export default function Navbar() {
     return false;
   };
   
-  const toggleServices = () => {
-    setServicesOpen(!servicesOpen);
-    if (solutionsOpen) setSolutionsOpen(false);
-  };
-  
   const toggleSolutions = () => {
     setSolutionsOpen(!solutionsOpen);
-    if (servicesOpen) setServicesOpen(false);
   };
 
   return (
@@ -162,67 +138,7 @@ export default function Navbar() {
             <div className="hidden md:flex md:justify-center md:flex-1 md:items-center">
               <div className="flex space-x-1">
                 {navigation.map((item) => {
-                  if (item.hasDropdown && item.isServices) {
-                    return (
-                      <div key={item.href} className="relative" ref={servicesRef}>
-                        <button
-                          onClick={toggleServices}
-                          className={cn(
-                            "px-5 py-2 mx-1 text-sm font-medium rounded-md transition-colors duration-200 flex items-center",
-                            (isActive(item.href) || servicesOpen) 
-                              ? "text-primary bg-primary/5" 
-                              : "text-foreground/80 hover:text-primary hover:bg-primary/5"
-                          )}
-                        >
-                          {item.name}
-                          <ChevronDown className={cn(
-                            "ml-1 h-4 w-4 transition-transform duration-200",
-                            servicesOpen ? "rotate-180" : ""
-                          )} />
-                        </button>
-                        
-                        {/* Services Dropdown */}
-                        {servicesOpen && (
-                          <div className="absolute top-full left-0 mt-1 w-[280px] bg-card rounded-md shadow-lg border border-border overflow-hidden z-50">
-                            <div className="p-4">
-                              <h3 className="font-medium mb-2">Our Services</h3>
-                              <div className="space-y-3">
-                                {serviceItems.map((service) => {
-                                  const Icon = service.icon;
-                                  return (
-                                    <Link 
-                                      key={service.href} 
-                                      href={service.href}
-                                      className="flex p-2 rounded-md hover:bg-muted transition-colors"
-                                      onClick={() => setServicesOpen(false)}
-                                    >
-                                      <div className="mr-3 mt-0.5">
-                                        <Icon className="h-5 w-5 text-primary" />
-                                      </div>
-                                      <div>
-                                        <div className="font-medium text-sm">{service.name}</div>
-                                        <div className="text-xs text-muted-foreground">{service.description}</div>
-                                      </div>
-                                    </Link>
-                                  );
-                                })}
-                              </div>
-                              <div className="mt-3 pt-3 border-t border-border">
-                                <Link 
-                                  href={`/${locale}/services`}
-                                  className="text-xs flex items-center text-primary hover:underline"
-                                  onClick={() => setServicesOpen(false)}
-                                >
-                                  View all services
-                                  <ChevronDown className="ml-1 h-3 w-3 rotate-270" />
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  } else if (item.hasDropdown && item.isSolutions) {
+                  if (item.hasDropdown && item.isSolutions) {
                     return (
                       <div key={item.href} className="relative" ref={solutionsRef}>
                         <button
@@ -245,7 +161,7 @@ export default function Navbar() {
                         {solutionsOpen && (
                           <div className="absolute top-full left-0 mt-1 w-[280px] bg-card rounded-md shadow-lg border border-border overflow-hidden z-50">
                             <div className="p-4">
-                              <h3 className="font-medium mb-2">Business Solutions</h3>
+                              <h3 className="font-medium mb-2">IT Services</h3>
                               <div className="space-y-3">
                                 {solutionItems.map((solution) => {
                                   const Icon = solution.icon;
@@ -273,7 +189,7 @@ export default function Navbar() {
                                   className="text-xs flex items-center text-primary hover:underline"
                                   onClick={() => setSolutionsOpen(false)}
                                 >
-                                  View all solutions
+                                  View all IT services
                                   <ChevronDown className="ml-1 h-3 w-3 rotate-270" />
                                 </Link>
                               </div>
